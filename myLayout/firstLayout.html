@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>         <html lang="en" class="no-js gt-ie9 ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js gt-ie9"> <!--<![endif]-->
+  <head>
+     <title>
+      first layout
+      </title>
+        <meta charset="utf-8">
+        <meta name="application-name" content="Layout">
+        <meta name="author" content="vanchaOmer">
+        <meta name="description" content="FirstLayout">
+        <meta name="keywords" content="Layouts ">
+        <meta property="og:title" content="layoutDesign">
+        <meta property="og:description" content="1st layout">
+   <script src="jquery-3.2.1.js" type="text/javascript"></script>
+<script src="jquery.cycle.all.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function()
+     {
+          $('#s1').cycle('fade');
+          
+      }
+      );
+        
+      
+      
+      </script>
+      <style>
+         .heaader
+         {
+             width:1350px;
+             height: 70px;
+             background-color: gainsboro;
+             align-content: center
+         }
+         .company{
+             font-family:arial;
+             font-size: 400%;
+           text-shadow:  2px 2px 2px black;
+             
+         }
+         .imagep
+         {
+             float:left;
+             border: 2px solid black;
+             width: 100px;
+             height:100px;
+             margin-left:50px;
+             margin-right: 120px ;
+             
+         }
+         .navi
+         {
+             width:1350px;
+             float:left;
+             background-color: #333;
+             margin-bottom: 20px;
+         }
+         .navi ul
+         {
+             list-style: none;
+             margin:0px;
+         }
+         .navi ul li
+         {
+             float:left;
+         }
+         .navi ul li a
+         {
+            display: block;
+             padding:15px;
+             color:#FFF;
+             text-decoration: none;
+             
+         }
+         .navi ul li a:hover{
+             background-color: #FFF;
+             color:#333;
+         }
+          .slideri
+          {
+              width: 840px;
+             margin-top: 100px;
+              margin-right: 10px;
+             
+          }
+
+        /* .sliderl
+          {
+              width: 500px;
+              height: 400px;
+              margin-left: 20PX;
+              margin-top: 120px;
+              background-color:gainsboro;
+              border: 2px solid black;
+              box-shadow:  2px 2px 2px black;
+              text-align: center;
+          }
+          */
+          .slideri img{
+              width: 1300px;
+              height: 450px;
+        margin-left: 15px;
+          
+          border:2px solid black;
+          }
+          .aboutusimg
+          {
+              float:right;  
+              width:500px;
+              margin-right: 20px;
+              border: 2px solid black;
+              height: 250px;
+          }
+          .headings
+          {
+              margin:20px;
+              font-family: arial;
+              font-size: 120%;
+              color:green;
+          }
+          .aboutush{
+              margin:20px;
+              font-family: arial;
+          }
+          .aboutusp{
+              margin-left:20px;
+              margin-right: 40px
+              font-family: arial;
+          }
+          .aboutustext
+          {
+               width: 700px;
+              height: 250px;
+              margin-left: 20PX;
+              
+              background-color:gainsboro;
+              border: 2px solid black;
+              box-shadow:  2px 2px 2px black;
+              text-align:auto;
+          }
+      </style>
+    </head>
+  <body>
+      
+<header class=topheader>
+      <div class="heaader">
+         <div>
+          <div>
+            <div>
+                <img class="imagep" src="Platform.jpg">
+                <div class="company" >
+                    PLATFORM TECH SOLUTIONS
+                </div> <div class="navi">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">PROJECTS</a></li>
+                    <li><a href="#">WHY US</a></li>                    <li><a href="#">CONTACT US</a></li>
+                    <br/>
+
+                </ul>
+            
+            </div> 
+          </div>
+          </div>
+    </div>
+    </div></header>
+          <div class="sliderso">
+              <div class="slideri" id="s1">
+                   <img class="images" src="web-development.jpg"  />
+                   
+                      <img class="images" src="web_development.jpg"  />
+                   <img class="images" src="services.jpg "/>
+                       <img  class="images" src="process.png " /> 
+                  <img class="images" src="whyus.jpg "/>
+              </div>
+             <!-- <div class="sliderl" id="s2" >
+                  <h1 class="points">PatformTech Solutions
+        <span class="aweb">A Web Development Company</span>                  </h1>
+                  <h1 class="points">We Are Your Digital Partner</h1>
+                  <h1 class="points">We Helps You To Make Your Digital Identity </h1>
+                  <h1 class="points">Hire Us For Your Beautiful Centric Website </h1>
+                  
+                  
+                  
+              </div>-->
+      </div>
+      <div >
+          <div class="headings">
+              <h1> About Us</h1></div>
+          <div>
+        <img src="aboutusi.jpg" class="aboutusimg" />
+                   </div>
+      </div>
+      <div class="aboutustext">
+          
+          <h1 class="aboutush">PlatformTech Solutions</h1>
+          <p class="aboutusp"><b>PlatformTech solution is a creative wed design company.We offer complete web solutions including website development, web apps, hybrid apps, custom web designing graphics designing ,SEO, digital marketing and other useful web application service.
+                
+        We firmly believes in delivering customized solutions to match our clients needs just perfectly
+                Our websites will improve your brand image and recall , help you sell more through your website and get you better sales . recognition and customer loyalty.
+                So, whatever your bussiness, who ever your customers may be and whatever may be your geographical reach , strong web design and SEO services are what you need .We provide them with integrity, commitment and performance.
+              </b>
+          </p>
+          </div>
+      </div>
+      
+  </body>
+</html>
