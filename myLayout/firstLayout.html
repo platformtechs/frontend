@@ -18,7 +18,7 @@
     <script type="text/javascript">
       $(document).ready(function()
      {
-          $('#s1').cycle('fade');
+          $('#s1').cycle('scrollRight');
           
       }
       );
@@ -100,32 +100,41 @@
           */
           .slideri img{
               width: 1300px;
-              height: 450px;
+              height: 400px;
         margin-left: 15px;
+
           
           border:2px solid black;
+          }
+          .wabout
+          {
+              height:300px;
+              background-color:#9ACCF4;
           }
           .aboutusimg
           {
               float:right;  
-              width:500px;
+              width:450px;
               margin-right: 20px;
+              margin-top: 20px;
               border: 2px solid black;
               height: 250px;
           }
           .headings
           {
-              margin:20px;
+              margin:30px;
               font-family: arial;
               font-size: 120%;
-              color:green;
+              color:black;
           }
           .aboutush{
-              margin:20px;
+        
               font-family: arial;
+              color:black;
+              padding-top: 20px;
           }
           .aboutusp{
-              margin-left:20px;
+              margin-left:10px;
               margin-right: 40px
               font-family: arial;
           }
@@ -134,11 +143,89 @@
                width: 700px;
               height: 250px;
               margin-left: 20PX;
-              
-              background-color:gainsboro;
-              border: 2px solid black;
               box-shadow:  2px 2px 2px black;
               text-align:auto;
+          }
+          .flipimages{
+              width:250px;
+              height: 260px;
+              border 2px solid blck;
+          }
+          .flipcard
+          {
+         width: 250px;
+              height:300px;
+                  border: 2px solid grey;
+              float:left;
+              margin-left:35px;
+              margin-right: 35px;
+              margin-bottom: 35px;
+              margin-top: 5px;
+              border-radius:8px;
+              background-color:#333;
+              
+          }
+          .flipcard:hover .front
+          {
+              transform:rotateY(-180deg);
+          }
+           .flipcard:hover .carddetails
+          {
+              transform:rotateY(0deg);
+          }
+          
+          .front
+          {
+          position:absolute;
+              transform: perspective(600px) rotateY(0deg);
+          backface-visibility: hidden;
+          transition: transform .5s linear 0s;
+              color: white;
+              text-align: center;
+          }
+           .carddetails
+          {
+          
+              transform: perspective(600px) rotateY(180deg);
+          backface-visibility: hidden;
+          transition: transform .5s linear 0s;
+              color: white;
+              text-align: center;
+          }
+          .ser_vices
+          {
+           height:695px;
+              background-color:oldlace;
+          }
+          .mainprojects
+          {
+              height: 590px;
+              background-color:darkslateblue;
+          }
+          .projects
+          {
+              width:300px;
+              height: 220px;
+              margin-left:80px;
+              margin-right: 40px;
+              margin-bottom: 40px;
+              margin-top: 35px;
+              float: left;
+              color: white;
+              font-family: arial;
+              border:2px solid white;
+              background-color:whitesmoke;
+          }
+          .project_image
+          {
+              width:300px;
+              height: 100px;
+          }
+          .project_content
+          {
+            margin: 5px;
+              text-align: center;
+          
           }
       </style>
     </head>
@@ -191,10 +278,12 @@
       <div >
           <div class="headings">
               <h1> About Us</h1></div>
-          <div>
+      </div>
+      <div class="wabout">
+      <div>
         <img src="aboutusi.jpg" class="aboutusimg" />
                    </div>
-      </div>
+      
       <div class="aboutustext">
           
           <h1 class="aboutush">PlatformTech Solutions</h1>
@@ -207,6 +296,173 @@
           </p>
           </div>
       </div>
+     <div class="headings">
+              <h1> Services</h1></div>
+      <div>
+          <div class="ser_vices">
+      <div  class="flipcard">
+         <div class="front">
+             <div class="cardimage"> <img class="flipimages" src="cardimage.png" > </div>
+               <div class="cardcontent">
+            heading1 
+             </div>
+          </div>
+          <div class="carddetails">
+          contents</div>
+      </div>
+      <div  class="flipcard">
+          
+          <div class="front"><div class="cardimage"> <img class="flipimages" src="cardimage.png" > </div>
+          <div class="cardcontent">
+            heading1  </div>
+          </div>
+          <div class="carddetails">
+          contents</div>
+          
+      </div>
+          
+      <div class="flipcard"><div class="front">
+          <div class="cardimage"> <img class="flipimages" src="cardimage.png" > </div>
+          <div class="cardcontent">
+            heading1  </div>
+          </div>
+          <div class="carddetails">
+          contents</div>
+          
+      </div>
+      <div class="flipcard">
+          <div class="front">
+          <div class="cardimage"> <img class="flipimages" src="cardimage.png" > </div>
+          <div class="cardcontent">
+            heading1  </div>
+          </div> 
+          <div class="carddetails">
+          contents</div>
+
+      </div>
+    
+      <div>
+      <div  class="flipcard">
+         <div class="front">
+             <div class="cardimage"> <img class="flipimages" src="cardimage.png" > </div>
+               <div class="cardcontent">
+            heading1 
+             </div>
+          </div>
+          <div class="carddetails">
+          contents</div>
+      </div>
+      <div  class="flipcard">
+          
+          <div class="front"><div class="cardimage"> <img class="flipimages" src="cardimage.png" > </div>
+          <div class="cardcontent">
+            heading1  </div>
+          </div>
+          <div class="carddetails">
+          contents</div>
+          
+      </div>
+      <div class="flipcard"><div class="front">
+          <div class="cardimage"> <img class="flipimages" src="cardimage.png" > </div>
+          <div class="cardcontent">
+            heading1  </div>
+          </div>
+          <div class="carddetails">
+          contents</div>
+          
+      </div>
+      <div class="flipcard">
+          <div class="front">
+          <div class="cardimage"> <img class="flipimages" src="cardimage.png" > </div>
+          <div class="cardcontent">
+            heading1  </div>
+          </div> 
+          <div class="carddetails">
+          contents</div>
+
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="headings">
+              <h1> Projects</h1></div>
+        
       
+      <div>  
+            <div class="mainprojects">
+    <div class="projects">
+    <div class="projects_image">    
+        
+        <img src="h.jpg">
+        </div>
+        <div class="project_content">
+        
+        
+        </div>
+            </div> 
+                <div>
+    <div class="projects">
+    <div class="projects_image">    
+        
+                <img src="h.jpg">
+        </div>
+        <div class="project_content">
+        
+        
+        </div>
+            </div> 
+                    <div>
+    <div class="projects">
+    <div class="projects_image">    
+        
+                <img src="h.jpg">
+        </div>
+        <div class="project_content">
+   <p></p>
+        </div>
+            </div> 
+                   <div>
+    <div class="projects">
+    <div class="projects_image">    
+        
+        
+                <img src="h.jpg">
+        </div>
+        <div class="project_content">
+        
+        
+        </div>
+            </div> 
+                       <div>
+    <div class="projects">
+    <div class="projects_image">    
+        
+        
+                <img src="h.jpg">
+        </div>
+        <div class="project_content">
+        
+        
+        </div>
+            </div> 
+                           <div>
+    <div class="projects">
+    <div class="projects_image">    
+        
+        
+                <img src="h.jpg">
+        </div>
+        <div class="project_content">
+        
+        
+        </div>
+            </div> 
+              </div>
+                <div class="headings">
+                    <h1> Why Us </h1></div>
+                           
+                           
+                        </div>               
   </body>
+                       
 </html>
