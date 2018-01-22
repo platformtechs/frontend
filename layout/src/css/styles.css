@@ -1,0 +1,104 @@
+/*.parallax{
+    background-image:image("img/bannerLeft.png");
+
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    
+    
+}*/
+.collapse ul 
+
+{
+    float:right;
+    
+}
+
+.parallax
+{
+    position:fixed;
+    height: 600px;
+    background-color:darkturquoise;
+width: 100%; 
+ 
+top:50px;
+    
+}
+.parallax h1{
+
+text-align: center;
+    color: white;
+
+}
+.contents
+{
+position:relative;
+    top:610px;
+ 
+    background-color:white;   
+}
+.project
+{
+    width:100%;
+    display:flex;
+    box-sizing: border-box;
+    height:400px; 
+}
+
+.box
+{
+    text-align: center;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+    width:220px;
+    line-height:400px; 
+
+}
+ .box h1 {
+     margin: 0px;
+     padding: 0px;
+     line-height: 400px;
+     font-size:50px;  
+    background: rgba(0,0,0,0.8);
+     transition: 1s;
+}
+.box h1 span{
+    background-color: white;
+    width: 100%;
+    transition: 1s;
+    color: black;
+    
+}
+.box:hover h1 span
+{
+    background-color:#262626;
+    color: white;
+
+}
+.box:hover h1 
+{
+    background:rgba(0,0,0,0);
+}
+.box:hover
+{
+    width:300px;
+}
+
+.box:nth-child(1)
+{
+    background: url(1.jpg);
+}
+.box:nth-child(2)
+{
+    background: url(2.jpg);
+}
+ .box:nth-child(3)
+{
+    background: url(3.jpg);
+}
+.box:nth-child(4)
+{
+    background: url(4.jpg);
+}
