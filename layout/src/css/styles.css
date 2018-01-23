@@ -102,3 +102,30 @@ position:relative;
 {
     background: url(4.jpg);
 }
+  .servicesicon
+{
+    background-color: #333;;
+}
+.icon1 .icon2
+{
+    display:block;
+    width: 200px;
+    height: 200px;
+    padding-top: 30px;
+    background-color: #333;
+    text-align: center;
+    border-radius: 50%;
+    color:#666;
+    transition: 2s;
+    border:2px solid #333;
+}
+.icon1 .icon2:hover
+{
+    transition: 1s;
+
+  border:2px solid yellow;
+    color: yellow;
+    box-shadow: 2px 2px 8px yellow;
+    text-shadow: 2px 2px 2px yellow;
+}
+
