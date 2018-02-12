@@ -128,3 +128,19 @@ transition: 0.3s;
     text-shadow: 2px 2px 2px yellow;
 }*/
 
+
+
+#navbar1 {
+    text-decoration: none;
+    color: #333;
+  
+}
+#navbar1:hover {
+    
+    color: white;
+
+    background-color: darkturquoise;
+
+   
+}
+
