@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+      <title>Parallex Effect</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      
+<!---------------------css styling---------------------------->
+      
+<style>
+      body,html
+           {
+            height: 100% ;
+           }
+.page-one
+           {
+             background: url("https://fthmb.tqn.com/YWMfjqiM4M6fxZguecmfsaS55W8=/4288x2848/filters:no_upscale():fill(transparent,1)/business-man-working-with-laptop-and-smartphone-beach-background-539242420-58d93d563df78c5162e3c147.jpg");
+             height: 100% 100%;
+             width:100% ;
+             background-size: 100% 100%;
+           }
+.parallex
+           {
+            background-image:url("https://i.ytimg.com/vi/4Z7_QwKN2rk/maxresdefault.jpg");
+            height: 100% 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding:200px;
+            text-align: center;
+            color: brown;
+            font-family: sans-serif;
+            margin:0px 0px 0px 0px;
+            height: 100% 100% ;
+               background-size:100% 100%;
+               width:100%;
+            } 
+.page-two
+             {
+               background:url("http://www.photo-er.com/Images/background-blank-right.png");
+               height: 100% 100% ;
+               background-size:100% 100%;
+               width:100%;
+            }
+p
+           {
+            font-family: serif;
+            font-size: 1.5em;
+            text-align: center;
+            color:black;
+           }
+.paragraph
+             {
+            height: 100%;
+            color:burlywood;
+            font-size;3em;
+            }
+h1
+         { 
+            font-family:sans-serif;
+            font-size: 4em;
+            color:darkred;
+            text-align: center;
+         }
+h2
+         {
+            font-family: serif;
+            font-size: 3em;
+            text-align: center;
+            color: brown;
+         }
+h3
+        {
+            font-family: serif;
+            font-size: 3em;
+            text-align: center;
+            color:brown;
+        }
+  h4
+      {
+       font-size: 2em;
+       color: black;
+       margin-left: 40px;
+      }
+      
+.fa-twitter
+           {
+            background-color: cornflowerblue;
+            color:floralwhite;
+            top:300px;
+            }
+.fa-facebook
+           {
+            background-color:darkblue;
+            color:floralwhite;
+            top:360px;
+           }
+.fa-instagram
+           {
+            background-color:cornflowerblue;
+            color:cornsilk;
+            top:420px;
+           }
+.fa-free-code-camp 
+           {
+            background-color: brown;
+            color:floralwhite;
+            top:480px;
+            }
+.fa-linkedin
+           {
+            background-color:cornflowerblue;
+            color:floralwhite;
+            top:540px;
+           }
+
+.fa-code,.fa-behance,.fa-magic,.fa-diamond
+          {
+            font-size: 6em;
+            color:darksalmon;
+          }
+
+.fa-mobile, .fa-linux
+      {
+            font-size: 6em;
+            color:darksalmon;
+      }
+      
+.menu
+      {
+            width:35px;
+            height: 5px;
+            background-color: black;
+            margin:6px 0;
+      }
+.side-nav a
+          {
+           position: absolute;
+           font-size: 20px;
+           border-radius:0 5px 5px 0;
+           color:white;
+           transition:0.3s;
+           padding:20px;
+           width:100px;
+           text-decoration:none;
+           left:-60px;  
+          }
+.side-nav a:hover
+          {
+            left:0;
+          }
+hr
+      {
+        width:20em;
+        border-color: black;
+      }
+li
+      {
+            color:darkgrey;
+            font-size: 1.1em;
+      }
+     
+.footer
+        {
+            padding-bottom: 50px;
+            padding-left: 20px;
+            padding-top: 50px;
+        }
+textarea 
+      {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    background-color;
+    font-size: 16px;
+    resize: none;
+   }
+     
+      
+
+</style>
+</head>
+<body>
+      
+      <!-------------------------------------Navbar section-------------------------------->
+  
+
+  
+ <nav class="navbar navbar-default " style="padding-top:30px;padding-bottom :30px;">
+   <div class="container-fluid ">
+    
+          <h5 style="font-size: 2em;text-align:right;">PrernaCodifier</h5>
+      
+      <ul class="nav nav-pills">
+      
+        <li ><a href="#contact"><div class="glyphicon glyphicon-envelope"></div>Email Id</a></li>
+       <li ><a href="#contact">Contact No</a></li>
+       <li ><a href=" #skills">Skills</a></li>
+       <li class="dropdown "><a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<div class="caret"></div></a>
+          <ul class="dropdown-menu">
+              <li><a href="#myprojects">Anant-2K18</a></li>
+              <li><a href="#myprojects">MLA_Track</a></li>
+              <li><a href="#myprojects">Patform Tech Solutions</a></li>
+              <li><a href="#myprojects">Happy Periods</a></li>   
+          </ul>
+       </li>
+      <li ><a href="#myprojects">Experience</a></li>
+      
+      <li class="active "><a href="#aboutme">About Me</a></li>
+      
+          </ul>
+       </div>
+    </nav>
+      
+ 
+      
+<!---------------------------parallex-effect------------------------------->
+   
+<div class="parallex" id ="aboutme">
+  <div class="side-nav">
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="https://www.facebook.com/prerna.pundir.963?ref=bookmarks" class="fa fa-facebook"></a> 
+    <a href="https://www.instagram.com/platformtechsolut/?hl=en" class="fa fa-instagram"></a>
+    <a href="https://www.freecodecamp.org/prernapundir" class="fa fa-free-code-camp"></a>
+    <a href="https://www.linkedin.com/in/prerna-pundir-9b6493152/" class="fa fa-linkedin"></a>
+  </div>
+      <div class="container-fluid ">
+       <div class="col-lg-12">
+      <h3 >Hey,I'm<br>Prerna Pundir</h3>
+              
+       
+<!---------------------------Project details-------------------------------->
+      
+
+  <div class="row">
+    <div class="col-lg-12">
+    <button class="btn btn-primary  " data-target="#mymodal" data-toggle="modal">I am ready for hire</button> 
+      <div class="modal" id ="mymodal" tadindex="-1">
+        <div class="modal-dialog" >
+          <div class="modal-content" style="background-color:back;">
+            <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>  
+            <h4>Ok,just a few quick<br>questions.<p style="font-size: 0.7em"> After you introduce yourself and your project,<br>I'll get in touch with you to work together.</p></h4></div>
+              <div class="modal-body">
+                 <div class="row">   
+                   <div class="col-lg-4">
+                   <input type="name" class="form-control" id="name" placeholder="Name" required="">
+                   </div>  
+                     <div class="col-lg-8">
+                       <input type="email" class="form-control" id="email" placeholder="Email"  required="" ></div>
+                  </div>
+                    <div class="row">   
+                      <div class="col-lg-4" style="margin-top: 20px;">
+                      <input type="phoneno" class="form-control" id="phoneno" placeholder="Phone No" required="">
+                      </div>  
+                       <div class="col-lg-8" style="margin-top: 20px;">
+                       <input type="website" class="form-control" id="website" placeholder="Website" required="">
+                       </div>
+                    </div>
+                    <textarea style="margin-top:20px;" placeholder="Tell me about your project..what is it?Why are you doing it?How can i help you?Timeline and buddget details. "  required=" " ></textarea>
+                    <input type="submit" value="Submit Your Project" class="button button-ghost-white" > <p style="font-size: 1em;">*Required</p>   
+              </div>
+              <div class="modal-footer">
+              <button class="btn btn-primary" data-dismiss="modal">close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+      </div></div>
+<!------------------------------page-one-------------------------------------------->
+   <div class="container-fluid page-one"><div class="col-lg-12">   
+<div >
+      <h2 ><i>Your dream doesn't have an<br>expiration date.Take a deep <br>breath and try again.<br>Never give up.<br>Smile forever....</i> </h2><h2> I'm <br>Software Engineeer....</h2><h3>Only i can change my life.<br>No one can do it for me.<br>No one can defeat me,until i have dedication to win....</h3>
+         </div></div></div>
+      
+<!----------------------------------page-two---------------------------------->
+      
+<div class="page-two footer">     
+      <h1>Hello Everyone!</h1><hr><p> I'm a student of Engineering and  interested in developing websites,graphics designing,content-writting and coding .I design websites for social-cause and enterprise.Active member of Platform and Training & Placement Cell.Great passion for Writting articles,stories and poems.I have a diverse set of skills,ranging from design to HTML+CSS+Javascript,all the way to Linux and UI/UX.Further i will continue with framework of Javascript,Node.js and React for developing apps.You can see my work on my<a href="https://github.com/Prernapundir">Github.</a> page.</p> 
+</div>
+      <!----------------------------project-section--------------------------------->
+      
+<div class="container-fluid footer" style="background-color:whitesmoke;" id="myprojects">
+ <div class="col-lg-12">
+  <h1>Projects</h1><hr><p style="font-size:2em;">I am part of Anant Fest-2018 website,a fest of three days of our college.Its my first Project.</p><center><button class="btn btn-default " align="left" ><a href="http://anantfest.in/">See the website</a></button></center>
+<div class="row">
+ <div class="col-lg-4" >
+  <img src="AN%20ICON.png" width="500" class="img-responsive">
+  <center><button class="btn btn-default " align="left" ><a href="http://anantfest.in/">See the website</a></button></center>
+   <p>Our Platform Team create the Anant fest 2018 website,and i am the part of this large project.</p>
+ </div>
+  <div class="col-lg-4">
+   <img src="pf%20icon%203.png" width="500" class="img-responsive">
+  <center><button class="btn btn-default " align="left" ><a href="https://platformtechs.github.io/">See the website</a></button></center>  
+  <p >Platform Tech Solutions runs a compaign who works for social-cause and enterprise.We are going to conduct a Web-hackathon on Anant Fest.</p></div>
+     <div class="col-lg-4" >
+      <img src="hp.png" width="500" class="img-responsive"> 
+      <center><button class="btn btn-default " align="left" ><a href="http://anantfest.in/">See the website</a></button></center>
+       <p >This project we made for ngo to aware peoples about the menstrual cycle.</p>
+     </div>
+    <div class="col-lg-12"  >
+     <center><img src="MT.png" width="500" class="img-responsive"> </center> 
+      <center><button class="btn btn-default " align="left" ><a href="http://test.mlatrack.com/">See the website</a></button></center>
+       <p >Kerala MLA Tracker is a website that processes the data released by Niyamasabha 
+(Kerala Legislative Assembly).This initiative tracks the parliamentary performances of all members
+of the Kerala Legislative Assembly except the Ministers, the Speaker and the Deputy speaker. 
+Attributes of the parliamentary performance, like the number of debates participated in,
+the number of questions asked and the number of private member bills introduced, 
+the number of submissions raised etc. are provided with details.</p>
+     </div>
+ </div>
+</div>
+      </div>   
+      <!---------------------------------------skills------------------------------------------->
+
+<div class="container-fluid footer" style="background-color:beige;" id="skills">
+ <div class="col-lg-12">
+  <div class="row">
+        <h3>My Skills</h3><hr>
+          <p >I am intersted in creating websites and digital-marketting.</p>
+  </div>
+<div class="row">
+  <div class="col-lg-4">
+    <div class="skills-block">
+     <center>   <i class="fa fa-diamond yellow"></i></center>
+      <center> <h4>Ideas</h4></center>
+        <p style="color:darkgrey">I collaborate with peoples through Twitter,Instagram and Facebook to nurture and transform ideas into well-thought out design specs.</p>
+    </div>
+  </div> 
+<div class="col-lg-4">
+  <div class="skills-block">
+     <center> <i class="fa fa-magic "></i></center>
+     <center> <h4>UX/UI</h4></center>
+      <p style="color:darkgrey">I sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. I'm a minimalist who truly believes that less is more.</p>
+</div>      
+</div>
+      
+  <div class="col-lg-4">
+    <div class="skills-block"><center><i class="fa fa-code "></i></center>
+    <center> <h4>Code</h4></center> 
+        <p style="color:darkgrey;">I design in the browser with HTML, CSS and a touch of JavaScript. I love coding  but I can work with front-end frameworks like Bootstrap too.
+        </p>
+    </div>
+  </div>    
+ </div>      
+</div>
+<div class="container-fluid footer" style="background-color:beige;">
+<div class="row">
+  <div class="col-lg-4">
+    <center><i class="fa fa-mobile" aria-hidden="true"></i></center>
+    <center><h4>Mobile-Apps</h4></center>
+    <p style="color:darkgray;">I design mobile-apps using native framework of Javascript. </p>
+  </div>
+  <div class="col-lg-4">
+    <center><i class="fa fa-linux" aria-hidden="true"></i></center>
+    <center><h4>Linux</h4></center>
+    <p style="color:darkgray;">I learned linux operating system.</p>    
+  </div>
+  <div class="col-lg-4">
+    <center><i class="fa fa-behance" aria-hidden="true"></i></center>
+    <center><h4>Behance</h4></center>
+    <p style="color:darkgray;">I learned linux operating system.</p>    
+  </div>
+</div>
+</div>
+      </div>    
+<!----------------------------------------quote section-------------------------------------------->
+      
+<div class="container-fluid" style="background-color:aliceblue">
+  <div class="col-lg-12">
+    <h5 style="text-align: center;font-family:inherit;color; font-size: 2em;margin-top: 100px;margin-bottom: 100px;" >" When you can't find sunshine, Be the sunshine.<br>No regrets...just lessons.No worries...just acceptance.<br>No expectations..just gratitude.<br>Live in such a way that if someone <br>spoke badly of you <br>no-one would Believe it "<br>..................</h5>
+</div>
+      </div>   
+<!----------------------------footer section-------------------------------------------------->
+<div class="container-fluid" style="background-color:skyblue;width:100%;text-align:center;color: white;padding-top:10px;padding-bottom:10px;" >ABOUTIAN</div>
+
+ 
+<div class="footer" style="background-color:black" id="contact">
+  <div class="container-fluid">
+      
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="pre.jpg" width="15%" >     
+                        <h5 style="color: white;font-size: 1.3em">FOLLOW <hr style="border-color: white;margin-left:2px;width: 5em"> </h5>
+ 
+            <li>https://twitter.com/Friends64879179</li>
+            <li>https://www.linkedin.com/in/prerna-pundir-9b6493152/</li>
+            <li>https://www.instagram.com/friendsforever3576/?hl=en</li>
+      </div>
+<div class="col-lg-4">
+  <h5 style="color: white; font-size: 1.3em">ABOUT</h5><hr style="border-color: white;margin-left:2px;width: 5em">
+     <li>Web developer</li>
+     <li>Graphic designer</li>
+     <li>Content-writter</li>
+     <li>Blogger</li>
+     <li>SEO</li>    
+</div>
+<div class="col-lg-4">
+  <h5 style="color: white;font-size: 1.3em">CONTACT</h5><hr style="border-color: white;margin-left:2px;width: 5em">
+      <li>8556964920</li>
+      <li>prernapundir1098@gmail.com</li>
+ <h5 style="color: white;font-size: 1.3em">LINKS</h5><hr style="border-color: white;margin-left:2px;width: 5em">
+ <i class="fa fa-facebook" aria-hidden="true" style="background-color: black"></i>
+ <i class="fa fa-instagram" style="background-color: black"></i>
+ <i class="fa fa-twitter" style="background-color: black"></i>
+ <i class="fa fa-github" style="background-color: black"></i>
+ <i class="fa fa-linkedin" style="background-color: black"></i>
+ <i class="fa fa-free-code-camp" aria-hidden="true"  ></i>
+</div>    
+     </div>
+   </div>
+</div>
+      
+      
+      
+      <div class="parallex"></div>
+  </body>     
+</html>
