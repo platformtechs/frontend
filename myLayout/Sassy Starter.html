@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)file:///C:/platform/frontend/vanchaLayout/src/index.html# -->
+<html lang="en" class="no-js gt-ie9" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--
+
+      Description: platformTech-website
+      Version: 0.0.1
+      Author: DilipCoder
+
+    //-->
+
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- #DNS prefetching -->
+    <!-- http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers -->
+    <link rel="dns-prefetch" href="file://ajax.googleapis.com/">
+    <link rel="dns-prefetch" href="file://use.typekit.net/">
+    <link rel="dns-prefetch" href="file://google-analytics.com/">
+
+    <!-- #Asset Prefetching -->
+    <!-- Fetch and Download Assets before requested by the user  -->
+    <!-- http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/#section:resource-prefetching -->
+    <link rel="prefetch" href="file:///C:/platform/frontend/vanchaLayout/src/index.html">
+
+    <!-- #Page Prefetching -->
+    <!-- http://calendar.perfplanet.com/2012/speed-up-your-site-using-prefetching -->
+    <link rel="prefetch" href="file:///C:/platform/frontend/vanchaLayout/src/index.html">
+
+    <!-- #Typekit -->
+
+    <title>Sassy Starter</title>
+    <meta name="description" content="">
+    <meta name="robots" content="all">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+    <!-- http://mathiasbynens.be/notes/rel-shortcut-icon -->
+    <!-- http://mathiasbynens.be/notes/touch-icons -->
+    <link rel="icon" type="image/ico" href="file:///C:/platform/frontend/vanchaLayout/src/favicon.ico">
+    <link rel="icon" type="image/png" href="file:///C:/platform/frontend/vanchaLayout/src/favicon.png">
+
+    <!-- CSS, you gotta have style -->
+    <link rel="stylesheet" href="./Sassy Starter_files/bootstrap.css">
+    <link rel="stylesheet" href="file:///C:/platform/frontend/vanchaLayout/src/vendor/css/tether.css">
+    <link rel="stylesheet" href="./Sassy Starter_files/fontawesome-all.css">
+    <link rel="stylesheet" href="./Sassy Starter_files/cardslider.css">
+    <link rel="stylesheet" href="file:///C:/platform/frontend/vanchaLayout/src/css/styles.css">
+    
+      <script src="./Sassy Starter_files/jquery-1.11.3.min.js.download"></script>
+      <script src="./Sassy Starter_files/jquery.cardslider.min.js.download"> </script>
+    <!-- Modernizer, cause some browsers suck -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+     
+  <!--*****************************************style tag************************************-->      
+    <style>
+          .flipimages{
+              width:250px;
+              height: 260px;
+              border 2px solid black;
+          }
+          .flipcard
+          {
+         width: 250px;
+              height:300px;
+                  border: 2px solid grey;
+              float:left;
+              margin-left:35px;
+              margin-right: 35px;
+              margin-bottom: 35px;
+              margin-top: 5px;
+              border-radius:8px;
+              background-color:#333;
+        }
+          .flipcard:hover .front
+          {
+              transform:rotateY(-180deg);
+          }
+           .flipcard:hover .carddetails
+          {
+              transform:rotateY(0deg);
+          }
+          
+          .front
+          {
+          position:absolute;
+              transform: perspective(600px) rotateY(0deg);
+          backface-visibility: hidden;
+          transition: transform .5s linear 0s;
+              color: white;
+              text-align: center;
+          }
+           .carddetails
+          {
+          
+              transform: perspective(600px) rotateY(180deg);
+          backface-visibility: hidden;
+          transition: transform .5s linear 0s;
+              color: white;
+             
+            margin: 10px;
+          } 
+      
+        
+        
+      </style>
+    </head>
+  <body>
+      <!-----------------------------------navbar------------------------------------>
+          <div class="fluid-container">
+          <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:black;">
+           <img src="./Sassy Starter_files/Platform.jpg" style="float:left;margin:10px 20px 10px 20px;width: 64px;height: 64px;">
+                  <a class="navbar-brand" herf="#" style="margin-top:10px;">Platform</a>
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myInverseNavbar2" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                  <div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav navbar-right" style="margin-top: 10px; margin-right: 10px">
+                      <li><a href="file:///C:/platform/frontend/vanchaLayout/src/index.html#">HOME</a></li> 
+                      <li><a href="file:///C:/platform/frontend/vanchaLayout/src/index.html#aboutus">ABOUT US</a></li> 
+                      <li><a href="file:///C:/platform/frontend/vanchaLayout/src/index.html#services">SERVICES</a></li>
+                      <li><a href="file:///C:/platform/frontend/vanchaLayout/src/index.html#project">PROJECTS</a></li>
+                      <li><a href="file:///C:/platform/frontend/vanchaLayout/src/index.html#whyus">WHY US</a></li>
+                       <li><a href="file:///C:/platform/frontend/vanchaLayout/src/index.html#contactus">CONTACTUS</a></li>
+                      </ul>
+              
+              </div>
+      </div>
+      </div>
+      <!------------------------------slider------------------------------------->
+       <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+  <!-- Indicators -->
+  
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+    <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+  </ol>
+  <div class="carousel-inner">
+  <div class="item active">
+            <img src="./Sassy Starter_files/laptop-mock-up-design_1315-12.jpg" class="img-responsive" style="width: 1366px;height: 500px;margin:70px 0px 20px 0px; ">
+              <div class="carousel-caption">
+              <h1 style="font-size:500%;">PLATFORM TECH SOLUTIONS</h1>
+              <h1>A Web Development Company</h1>
+              </div>
+      </div>
+          <div class="item">
+              <img src="./Sassy Starter_files/web_development.jpg" class="img-responsive" style="width: 1366px;height: 500px; margin:70px 0px 20px 0px;">
+          </div>
+
+          <div class="item">
+              <img src="./Sassy Starter_files/process.png" class="img-responsive" style="width: 1366px;height: 500px;margin:70px 0px 20px 0px;">
+      </div>
+      <div class="item">
+              <img src="./Sassy Starter_files/whyus.jpg" class="img-responsive" style="width: 1366px;height: 500px;margin:70px 0px 20px 0px;">
+      </div>
+      
+          </div>
+          <a class="left carousel-control" href="file:///C:/platform/frontend/vanchaLayout/src/index.html#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span><span class="sr-only"></span> </a><a class="right carousel-control" href="file:///C:/platform/frontend/vanchaLayout/src/index.html#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span><span class="sr-only"></span> </a> </div>
+     
+
+      <!----------------------------------about us-------------------->
+       <div style="background-color:deepskyblue;color: white;">
+      <div class="container" id="aboutus" style="background-color:darkturquoise; ">
+      <div class="jumbotron" style="background-color:deepskyblue; "> 
+          <div class="row">
+              <div class="col-lg-6"><h2>About Us</h2>PlatformTech solution is a creative wed design company.We offer complete web solutions including website development, web apps, hybrid apps, custom web designing graphics designing ,SEO, digital marketing and other useful web application service. We firmly believes in delivering customized solutions to match our clients needs just perfectly Our websites will improve your brand image and recall , help you sell more through your website and get you better sales . recognition and customer loyalty. So, whatever your bussiness, who ever your customers may be and whatever may be your geographical reach , strong web design and SEO services are what you need .We provide them with integrity, commitment and performance.
+              </div>
+              <div class="col-lg-6">
+                  <img src="./Sassy Starter_files/web-development.jpg" style="width:500px;margin:20px;">
+              </div>
+          </div>
+          </div>
+           </div></div>
+      <!--------------------------------------services------------------------------> 
+       <div style="background-color: gainsboro;">  <div class="container" id="services"> <h2 style="margin-left:30px;">Services</h2>
+      </div>
+      <div class="container " style="background-color: gainsboro;">
+          <div class="row">
+             
+        <div class="col-lg-4">
+                    <div class="flipcard">
+         <div class="front">
+             <div class="cardimage"> <img class="flipimages" src="./Sassy Starter_files/cardimage.png"> </div>
+               <div class="cardcontent">
+            heading1 
+             </div>
+          </div>
+          <div class="carddetails">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime aut eaimpedit voluptates aperiam dolor laborum officiis autem aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        <br><br>
+                         <button class="btn btn-success">Read more..</button></div>
+            </div></div>
+                  
+               <div class="col-lg-4">
+                    <div class="flipcard">
+         <div class="front">
+             <div class="cardimage"> <img class="flipimages" src="./Sassy Starter_files/cardimage.png"> </div>
+               <div class="cardcontent">
+            heading2
+             </div>
+          </div>
+          <div class="carddetails">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime aut eaimpedit voluptates aperiam dolor laborum officiis autem aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        <br>  <br>
+                         <button class="btn btn-success">Read more..</button></div>
+      </div>
+              </div>
+              
+               <div class="col-lg-4">
+                    <div class="flipcard">
+         <div class="front">
+             <div class="cardimage"> <img class="flipimages" src="./Sassy Starter_files/cardimage.png"> </div>
+               <div class="cardcontent">
+            heading3
+             </div>
+          </div>
+          <div class="carddetails">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime aut eaimpedit voluptates aperiam dolor laborum officiis autem aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        <br>  <br>
+                         <button class="btn btn-success">Read more..</button></div>
+                   </div></div></div>
+
+          <div class="row">
+              <div class="col-lg-4">
+                    <div class="flipcard">
+         <div class="front">
+             <div class="cardimage"> <img class="flipimages" src="./Sassy Starter_files/cardimage.png"> </div>
+               <div class="cardcontent">
+            heading4
+             </div>
+          </div>
+          <div class="carddetails">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime aut eaimpedit voluptates aperiam dolor laborum officiis autem aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          <br>  <br> <button class="btn btn-success">Read more..</button></div>
+      </div></div>
+    
+        
+               <div class="col-lg-4">
+                    <div class="flipcard">
+         <div class="front">
+             <div class="cardimage"> <img class="flipimages" src="./Sassy Starter_files/cardimage.png"> </div>
+               <div class="cardcontent">
+            heading5
+             </div>
+          </div>
+          <div class="carddetails">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime aut eaimpedit voluptates aperiam dolor laborum officiis autem aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        <br>  <br>
+                         <button class="btn btn-success">Read more..</button></div>
+      </div></div>
+        
+               <div class="col-lg-4">
+                    <div class="flipcard">
+         <div class="front">
+             <div class="cardimage"> <img class="flipimages" src="./Sassy Starter_files/cardimage.png"> </div>
+               <div class="cardcontent">
+            heading6
+             </div>
+          </div>
+          <div class="carddetails">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime aut eaimpedit voluptates aperiam dolor laborum officiis autem aspernatur! Lorem ipsum   dolor sit amet, consectetur adipisicing elit. 
+                        <br>  <br>
+                         <button class="btn btn-success">Read more..</button></div>
+      </div></div>
+      </div>
+    </div>
+      </div>
+            
+      <!-------------------------------------------projects------------------------------->
+      <div style="background-color:#333;">
+      <div class="container" id="project" style="color: white;"><h2 style="margin-left:30px; margin-bottom:20px; ">Projects </h2></div>
+      <div class="container ">
+          <div class="row">
+           <div class="col-lg-4">
+          <div class="thumbnail"> <img src="./Sassy Starter_files/400X200.gif" alt="Thumbnail Image 1" class="img-responsive">
+            <div class="caption">
+              <h3>Heading</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <hr>
+                <center> <button class="btn btn-success">Read more..</button></center>
+            </div>
+               </div></div>
+               <div class="col-lg-4">
+          <div class="thumbnail"> <img src="./Sassy Starter_files/400X200.gif" alt="Thumbnail Image 1" class="img-responsive">
+            <div class="caption">
+              <h3>Heading</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <hr>
+        <center> <button class="btn btn-success">Read more..</button></center>
+              </div></div></div>
+               
+               <div class="col-lg-4">
+          <div class="thumbnail"> <img src="./Sassy Starter_files/400X200.gif" alt="Thumbnail Image 1" class="img-responsive">
+            <div class="caption">
+              <h3>Heading</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <hr>
+               <center> <button class="btn btn-success">Read more..</button></center>
+            </div>
+                   </div></div>
+               <div class="col-lg-4">
+          <div class="thumbnail"> <img src="./Sassy Starter_files/400X200.gif" alt="Thumbnail Image 1" class="img-responsive">
+            <div class="caption">
+              <h3>Heading</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <hr>
+                <center> <button class="btn btn-success">Read more..</button></center>
+              </div></div>
+              </div>
+               <div class="col-lg-4">
+          <div class="thumbnail"> <img src="./Sassy Starter_files/400X200.gif" alt="Thumbnail Image 1" class="img-responsive">
+            <div class="caption">
+              <h3>Heading</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <hr>
+                 <center> <button class="btn btn-success">Read more..</button></center>
+              </div>
+                   </div></div>
+               <div class="col-lg-4">
+          <div class="thumbnail"> <img src="./Sassy Starter_files/400X200.gif" alt="Thumbnail Image 1" class="img-responsive">
+            <div class="caption">
+              <h3>Heading</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <hr>
+ <center> <button class="btn btn-success">Read more..</button></center>
+            </div>
+                   </div></div>
+          </div></div></div>
+      <!----------------------------------why us------------------------>
+      <div style="background-color: gainsboro;" id="whyus">
+      <div class="container"><h2 style="margin-left:30px; margin-bottom:20px ">Why Us </h2></div>
+     <div class="container">
+      <div class="row">
+          <div class="col-lg-12"><div class="panel panel-primary">
+              <div class="col-lg-6 ">
+              <div class="panel-body">
+              <div class="thumbnial">
+                  <div class="col-lg-2">  <img src="./Sassy Starter_files/correct.png" style="width:64px;height: 64px; "></div>
+                  <div class="col-lg-10"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, sequi, repudiandae tenetur et veniam labore debitis repellendus totam non incidunt hic esse!    </div>
+                  </div>
+                  </div>
+               <div class="panel-body">
+              <div class="thumbnial">
+                  <div class="col-lg-2">  <img src="./Sassy Starter_files/correct.png" style="width:64px;height: 64px; "></div>
+                  <div class="col-lg-10"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, sequi, repudiandae tenetur et veniam labore debitis repellendus totam non incidunt hic esse!    </div>
+                  </div>
+              </div>
+               <div class="panel-body">
+              <div class="thumbnial">
+                  <div class="col-lg-2">  <img src="./Sassy Starter_files/correct.png" style="width:64px;height: 64px; "></div>
+                  <div class="col-lg-10"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, sequi, repudiandae tenetur et veniam labore debitis repellendus totam non incidunt hic esse!    </div>
+                  </div>
+                  </div></div>
+                          <div class="col-lg-6">
+              <div class="panel-body">
+              <div class="thumbnial">
+                  <div class="col-lg-2">  <img src="./Sassy Starter_files/correct.png" style="width:64px;height: 64px; "></div>
+                  <div class="col-lg-10"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, sequi, repudiandae tenetur et veniam labore debitis repellendus totam non incidunt hic esse!    </div>
+                  </div>
+                  </div>
+               <div class="panel-body">
+              <div class="thumbnial">
+                  <div class="col-lg-2">  <img src="./Sassy Starter_files/correct.png" style="width:64px;height: 64px; "></div>
+                  <div class="col-lg-10"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, sequi, repudiandae tenetur et veniam labore debitis repellendus totam non incidunt hic esse!    </div>
+                  </div>
+              </div>
+               <div class="panel-body">
+              <div class="thumbnial">
+                  <div class="col-lg-2">  <img src="./Sassy Starter_files/correct.png" style="width:64px;height: 64px; "></div>
+                  <div class="col-lg-10"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, sequi, repudiandae tenetur et veniam labore debitis repellendus totam non incidunt hic esse!    </div>
+                  </div>
+                  </div></div>
+              </div>
+          </div>
+         </div>
+          </div></div>
+      <!------------------techno,and news------------------------>
+    <div style="background-color:indigo;">
+ 
+      <div class="container" style="background-color: indigo;color: white;">
+          
+          
+        <div class="col-lg-6">
+            
+            <div class="container"> <h2>Latest News</h2></div>
+            <div class="well" style="background-color:indigo;">
+          <div class="media">
+              <div class="media-left">
+              <img src="./Sassy Starter_files/72X72.gif" class="img-circle">
+              </div>
+              <div class="media-body">
+              <div class="media-heading">
+                  <h4> Heading</h4><p>content</p>
+                  </div>
+              </div>
+            </div>
+            <br>
+            <div class="media">
+              <div class="media-left">
+              <img src="./Sassy Starter_files/72X72.gif" class="img-circle">
+              </div>
+              <div class="media-body">
+              <div class="media-heading">
+                  <h4> Heading</h4><p>content</p>
+                  </div>
+              </div>
+            </div>
+            <br>
+            <div class="media">
+              <div class="media-left">
+              <img src="./Sassy Starter_files/72X72.gif" class="img-circle">
+              </div>
+              <div class="media-body">
+              <div class="media-heading">
+                  <h4> Heading</h4><p>content</p>
+                  </div>
+                </div></div>
+            </div>
+              
+          </div>
+          <div class="col-lg-6 ">
+              <div class="container" style="background-color: indigo;color: white;"> <h2>Technologies</h2></div>
+              <div class="well" style="background-color:indigo;">
+          
+                <div class="row">
+                  <div class="col-lg-4 text-center">
+                      <a href="file:///C:/platform/frontend/vanchaLayout/src/index.html#"> <img class="img-rounded" src="./Sassy Starter_files/72X72.gif"></a>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                      <a href="file:///C:/platform/frontend/vanchaLayout/src/index.html#"> <img class="img-rounded" src="./Sassy Starter_files/72X72.gif"></a>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                      <a href="file:///C:/platform/frontend/vanchaLayout/src/index.html#"> <img class="img-rounded" src="./Sassy Starter_files/72X72.gif"></a>
+                    </div>
+                   
+                  
+                  </div>  
+                  
+                <br><br>
+                   <div class="row">
+                  <div class="col-lg-4 text-center">
+                      <a href="file:///C:/platform/frontend/vanchaLayout/src/index.html#"> <img class="img-rounded" src="./Sassy Starter_files/72X72.gif"></a>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                      <a href="file:///C:/platform/frontend/vanchaLayout/src/index.html#"> <img class="img-rounded" src="./Sassy Starter_files/72X72.gif"></a>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                      <a href="file:///C:/platform/frontend/vanchaLayout/src/index.html#"> <img class="img-rounded" src="./Sassy Starter_files/72X72.gif"></a>
+                    </div>
+                   
+                  
+                  </div>  
+       
+                   <br><br>
+        <div class="row">
+                  <div class="col-lg-4 text-center">
+                      <a href="file:///C:/platform/frontend/vanchaLayout/src/index.html#"> <img class="img-rounded" src="./Sassy Starter_files/72X72.gif"></a>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                      <a href="file:///C:/platform/frontend/vanchaLayout/src/index.html#"> <img class="img-rounded" src="./Sassy Starter_files/72X72.gif"></a>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                      <a href="file:///C:/platform/frontend/vanchaLayout/src/index.html#"> <img class="img-rounded" src="./Sassy Starter_files/72X72.gif"></a>
+                    </div>
+                   
+                  
+                  </div>  
+
+              
+                  </div>  
+          </div></div>
+          </div>
+                 <!---------------------------------our clients------------------------------->
+       <div id="myCarousel0" class="carousel slide" data-ride="carousel" style="background-color:gainsboro;color:black;"> 
+  <!-- Indicators -->
+  <div class="container">
+      <div class="container  text-center"><h1><b> Our Clients</b></h1>  </div>
+  
+  <div class="carousel-inner " style="margin:20px;">
+  <div class="item active">
+      <div class="container">
+          <div class="row">
+            <div class="col-lg-4"><img src="./Sassy Starter_files/3b536b.gif">
+      </div>
+       <div class="col-lg-4"><img src="./Sassy Starter_files/3b536b.gif">
+      </div>
+       <div class="col-lg-4"><img src="./Sassy Starter_files/3b536b.gif">
+      </div>      
+          </div></div>
+      </div>
+      
+          <div class="item">
+          <div class="container">
+          <div class="row">
+            <div class="col-lg-4"><img src="./Sassy Starter_files/3b536b.gif" class="img-responsive">
+      </div>
+       <div class="col-lg-4"><img src="./Sassy Starter_files/3b536b.gif" class="img-responsive">
+      </div>
+       <div class="col-lg-4"><img src="./Sassy Starter_files/3b536b.gif" class="img-responsive">
+      </div>      
+          </div></div>
+          </div>
+ 
+          <div class="item">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4"><img src="./Sassy Starter_files/3b536b.gif" class="img-responsive">
+      </div>
+       <div class="col-lg-4"><img src="./Sassy Starter_files/3b536b.gif" class="img-responsive">
+      </div>
+       <div class="col-lg-4"><img src="./Sassy Starter_files/3b536b.gif" class="img-responsive">
+      </div>      
+          </div></div>
+      </div>
+      <div class="item">
+       <div class="container">
+          <div class="row">
+            <div class="col-lg-4"><img src="./Sassy Starter_files/3b536b.gif" class="img-responsive">
+      </div>
+       <div class="col-lg-4"><img src="./Sassy Starter_files/3b536b.gif" class="img-responsive">
+      </div>
+       <div class="col-lg-4"><img src="./Sassy Starter_files/3b536b.gif" class="img-responsive">
+      </div>      
+          </div></div>
+      </div>
+      </div>  
+          </div>
+          <a class="left carousel-control" href="file:///C:/platform/frontend/vanchaLayout/src/index.html#myCarousel0" data-slide="prev"><span class="icon-prev"></span><span class="sr-only"></span> </a><a class="right carousel-control" href="file:///C:/platform/frontend/vanchaLayout/src/index.html#myCarousel0" data-slide="next"><span class="icon-next"></span><span class="sr-only"></span> </a> </div>
+     
+
+
+      <!---------------------------------whatt our clients say-------------------------------->
+       <div id="myCarousel1" class="carousel slide" data-ride="carousel" style="background-color: darkturquoise;color:white;"> 
+  <!-- Indicators -->
+  <div class="container">
+      <div class="container  text-center"><h1><b>What Our Clients Say</b></h1>  </div>
+  
+  <div class="carousel-inner text-center">
+  <div class="item active left">
+            
+         <b>       
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit consectetur adipiscing elit. Praesent commodo cursus magna,et.consectetur adipiscing elit. Maecenas sed diam.consectetur adipiscing elit."</p>
+            <h4 style="text-align:right;">- Name of client<br>company</h4>      
+        
+              
+      </b>      
+      </div>
+          <div class="item next left">
+          <b>   <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit consectetur adipiscing elit. Praesent commodo cursus magna,et.consectetur adipiscing elit. Maecenas sed diam.consectetur adipiscing elit."</p>
+            <h4 style="text-align:right;">- Name of client<br>company</h4>      
+              </b>
+          </div>
+ 
+          <div class="item">
+           <b>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit consectetur adipiscing elit. Praesent commodo cursus magna,et.consectetur adipiscing elit. Maecenas sed diam.consectetur adipiscing elit."</p>
+               <h4 style="text-align:right;">- Name of client<br>company</h4>    </b>  
+               
+      </div>
+      <div class="item">
+       <b>  <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit consectetur adipiscing elit. Praesent commodo cursus magna,et.consectetur adipiscing elit. Maecenas sed diam.consectetur adipiscing elit."</p>
+           <h4 style="text-align:right;">- Name of client<br>company</h4>   </b>   
+        
+      </div>
+      </div>  
+          </div>
+          <a class="left carousel-control" href="file:///C:/platform/frontend/vanchaLayout/src/index.html#myCarousel1" data-slide="prev"><span class="icon-prev"></span><span class="sr-only"></span> </a><a class="right carousel-control" href="file:///C:/platform/frontend/vanchaLayout/src/index.html#myCarousel1" data-slide="next"><span class="icon-next"></span><span class="sr-only"></span> </a> </div>
+      <!-----------------------------------------contact form-------------------------------------->
+      <div id="contact" class="contact" style="text-align: center;margin:20px;color:white;background-color:#333">
+      
+      <div class="container">
+        <div class="row">
+          <h2 style="margin:20px;">
+            Drop Your Query 
+              <br>
+            </h2>
+            <div class="col-lg-6">
+            <div class="input-group">
+                <span class="input-group-addon" id="sizing-addon1">
+                
+                                <i class="fa fa-user" area-hidden="true"></i>
+                
+                
+                </span>
+                <input type="text" class="form-control" area-describedly="sizing-addon1" placeholder="Full Name">
+                
+                
+                </div>
+                <br>
+                 <div class="input-group">
+                <span class="input-group-addon" id="sizing-addon1">
+                
+                <i class="fa fa-envelope" area-hidden="true"></i>
+                
+                </span>
+                <input type="text" class="form-control" area-describedly="sizing-addon1" placeholder="Email">
+                
+                
+                </div>
+                <br>
+                 <div class="input-group">
+                <span class="input-group-addon" id="sizing-addon1">
+                
+                                <i class="fa fa-phone" area-hidden="true"></i>
+                
+                
+                </span>
+                <input type="text" class="form-control" area-describedly="sizing-addon1" placeholder="Phone Number">
+                
+                
+                </div>
+                <br>
+            </div>
+            <div class="col-lg-6">
+            <textarea rows="4" cols="80" class="form control" id="message" name="message" placeholder="Message" type="text"></textarea>
+                     <br><br>
+                     <button class="btn btn-primary" type="submit">Submit Your Message</button>
+
+            
+            </div>
+          
+          </div>  </div>
+      </div>
+     
+
+
+                   
+      <!------------------------------------contact us---------------------------------->
+      <div class="container" style="background-color: #333;" id="contactus;">
+        <div class="row">
+            <div class="col-lg-4" style="color:white;margin:20px 20px 20px 100px">
+                            <h3>Contact no.</h3>
+              <span class="fa fa-phone"></span>
+                <br>4466464496<br>
+                    4646412121
+                
+                <h3>Address</h3>
+                <span class="fa fa-address-card"></span><br>
+                43/54,<br>
+                Bajwara,<br>                         
+                Hoshiarpur,<br>
+                Punjab. 
+                                         </div>
+             <div class="col-lg-4" style="color:white;margin:20px 20px 20px 100px;">
+                  <h3>Email</h3>
+                   <span class="fa fa-envelope"></span><br>
+                platform44@gmail.com<br>
+                platformsol41@gmail.com
+                
+                <h3>For more imformation</h3>
+                  <span class="fa fa-facebook"></span> <span class="fa fa-twitter-square"></span> <span class="fa fa-instagram"></span><br>
+                www.platform.com<br>
+                www.facebook.com/5platform  <br>                         
+                www.twitter.com/3platform<br>
+                www.instagram.com/8platform
+                                         </div>
+    
+           
+          </div>  
+      
+      
+      <div class="row">
+      <div class="col-lg-12" style="color:white;">
+          <p></p><center>Copyright © PlatformTechCloud . All rights reserved.</center><p></p>
+      </div>
+    </div>
+      
+      </div>
+              
+             
+      
+    <!-- SCRIPTS -->
+      <script src="file:///C:/platform/frontend/vanchaLayout/src/js/bootstrap.min.js"></script>
+    
+    <script src="./Sassy Starter_files/bootstrap.js.download"></script>
+    <script src="./Sassy Starter_files/tether.min.js.download"></script>
+    
+
+    <!-- Google Analytics -->
+
+  
+
+</body></html>
