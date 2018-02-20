@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta name="auther" content="Akanksha Sharma">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" media="mediatype and|not|only (media feature)" href="mystylesheet.css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<link href="https://fonts.googleapis.com/css?family=Signika:700" rel="stylesheet">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link href="https://fonts.googleapis.com/css?family=Cabin:700" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+		<style>
+			/*CSS for dropdown button*/
+			.dropbtn{
+				background: #c50e29;
+				color:white;
+				/*border:0px 15px 0px 15px black;*/
+				border:none;
+				padding:8px;
+				cursor:pointer;
+				padding-top: 15px;
+			}
+			.dropdown{
+				position:relative;
+				display:inline-block;
+			}
+			.dropdown-content{
+				display:none;
+				position: absolute;
+				background-color: #c50e29;
+				min-width:160px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				z-index:1;
+			}
+			.dropdown-content a{
+				color:white;
+				padding:12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+			.dropdown-content a:hover{
+				/*background-color: #c8c8c8;*/
+				margin-left: 20px;
+			}
+			.dropdown:hover .dropdown-content{
+				display: block;
+			}
+			.dropdown:hover .dropbtn{
+				background-color: #ff867f;
+			}
+
+			/*css for gallery*/
+			.mySlides {display:none}
+			#heading{
+	    		color: #fd0001;
+	    		font-family: 'Cabin';
+	    		font-size: 40pt;
+	    		margin-top: 50px;
+	    	}
+        #foot{
+             font-size: 20pt;
+             padding-top: 10px;
+            /* padding-left: 10px;
+             padding-right: 20px;
+             padding-bottom: 30px;*/
+          }
+		</style>
+	</head>
+	<body>
+		<!-- Div for Navbar -->
+		<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #c50e29;">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+        			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          				<span class="icon-bar"></span>
+          				<span class="icon-bar"></span>
+          				<span class="icon-bar"></span>                        
+      				</button>
+				    <img src="Images\logo1.jpg" alt="logo" style="height:50px;">
+    			</div>
+    		<div>
+        	<div class="collapse navbar-collapse" id="myNavbar">
+        		<ul class="nav navbar-nav">
+        		    <li><a href="index.html">Home</a></li>
+        			<li><a href="abouthp.html">About Us</a></li>
+        	  		<li>
+        	  			<div class="dropdown">
+								<button class="dropbtn">Our Work</button>
+								<div class="dropdown-content">
+								
+									<a href="gallery.html">Gallery</a>
+									<a href="achievements.html">Achievments</a>
+								
+								</div>
+							</div>
+        	  		</li>
+            		<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd0vABcFQ9GNSByT_sWLdChVL_4m-mw4CiJJ2G43msZHfIbRQ/viewform?usp=sf_link">Join Us</a></li>
+            		<!--<li><a href="#section5">Contact Us</a></li>-->
+        		</ul>
+        	</div>
+    	</div>
+   		</div>
+   		</nav> 
+
+
+		<!-- Gallery -->
+		<center><h1 id="heading">Gallery</h1></center>
+
+		<!--Photos -->
+		<!-- Row 1-->
+		<div class="w3-row-padding" style="margin:0 -16px">
+  			<div class="w3-col s4">
+    			<img src="Images\gl1.jpg" style="width:100%;cursor:pointer;height:300px" onclick="openModal();currentDiv(1)" class="w3-hover-shadow">
+  			</div>
+  			<div class="w3-col s4">
+    			<img src="Images\gl2.jpg" style="width:100%;cursor:pointer;height:300px;" onclick="openModal();currentDiv(2)" class="w3-hover-shadow">
+  			</div>
+  			<div class="w3-col s4">
+    			<img src="Images\gl3.jpg" style="width:100%;cursor:pointer;height:300px;" onclick="openModal();currentDiv(3)" class="w3-hover-shadow">
+  			</div>
+		</div>
+
+		<!-- Row 2-->
+		<div class="w3-row-padding" style="margin:0 -16px">
+  			<div class="w3-col s4">
+    			<img src="Images\gl4.jpg" style="width:100%;cursor:pointer;height:300px;" onclick="openModal();currentDiv(1)" class="w3-hover-shadow">
+  			</div>
+  			<div class="w3-col s4">
+    			<img src="Images\gl5.jpg" style="width:100%;cursor:pointer;height:300px;" onclick="openModal();currentDiv(2)" class="w3-hover-shadow">
+  			</div>
+  			<div class="w3-col s4">
+    			<img src="Images\gl6.jpg" style="width:100%;cursor:pointer;height:300px;" onclick="openModal();currentDiv(3)" class="w3-hover-shadow">
+  			</div>
+		</div>
+
+		<!-- Row 3-->
+		<div class="w3-row-padding" style="margin:0 -16px">
+  			<div class="w3-col s4">
+    			<img src="Images\gl7.jpg" style="width:100%;cursor:pointer;height:300px;" onclick="openModal();currentDiv(1)" class="w3-hover-shadow">
+  			</div>
+  			<div class="w3-col s4">
+    			<img src="Images\gl8.jpg" style="width:100%;cursor:pointer;height:300px;" onclick="openModal();currentDiv(2)" class="w3-hover-shadow">
+  			</div>
+  			<div class="w3-col s4">
+    			<img src="Images\gl9.jpg" style="width:100%;cursor:pointer;height:300px;" onclick="openModal();currentDiv(3)" class="w3-hover-shadow">
+  			</div>
+		</div>
+
+		<!-- Row 4-->
+		<div class="w3-row-padding" style="margin:0 -16px">
+  			<div class="w3-col s4">
+    			<img src="Images\gl10.jpg" style="width:100%;cursor:pointer;height:300px;" onclick="openModal();currentDiv(1)" class="w3-hover-shadow">
+  			</div>
+  			<div class="w3-col s4">
+    			<img src="Images\gl11.jpg" style="width:100%;cursor:pointer;height:300px;" onclick="openModal();currentDiv(2)" class="w3-hover-shadow">
+  			</div>
+  			<div class="w3-col s4">
+    			<img src="Images\gl12.jpg" style="width:100%;cursor:pointer;height:300px;" onclick="openModal();currentDiv(3)" class="w3-hover-shadow">
+  			</div>
+		</div>
+
+		<!-- Row 5-->
+		<div class="w3-row-padding" style="margin:0 -16px">
+  			<div class="w3-col s4">
+    			<img src="Images\gl13.jpg" style="width:100%;cursor:pointer;height:300px;" onclick="openModal();currentDiv(1)" class="w3-hover-shadow">
+  			</div>
+  			<div class="w3-col s4">
+    			<img src="Images\gl14.jpg" style="width:100%;cursor:pointer;height:300px;" onclick="openModal();currentDiv(2)" class="w3-hover-shadow">
+  			</div>
+  			<div class="w3-col s4">
+    			<img src="Images\gl15.jpg" style="width:100%;cursor:pointer;height:300px;" onclick="openModal();currentDiv(3)" class="w3-hover-shadow">
+  			</div>
+		</div>
+
+		<div id="myModal" class="w3-modal w3-black">
+ 			<span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal()" style="cursor:pointer">×</span>
+ 			<div class="w3-modal-content">
+ 				<div class="w3-content" style="max-width:1200px">
+   					<img class="mySlides" src="Images\gl1.jpg" style="width:100%">
+   					<img class="mySlides" src="Images\gl2.jpg" style="width:100%">
+   					<img class="mySlides" src="Images\gl3.jpg" style="width:100%">
+   					<img class="mySlides" src="Images\gl4.jpg" style="width:100%">
+   					<img class="mySlides" src="Images\gl5.jpg" style="width:100%">
+   					<img class="mySlides" src="Images\gl6.jpg" style="width:100%">
+   					<img class="mySlides" src="Images\gl7.jpg" style="width:100%">
+   					<img class="mySlides" src="Images\gl8.jpg" style="width:100%">
+   					<img class="mySlides" src="Images\gl9.jpg" style="width:100%">
+   					<img class="mySlides" src="Images\gl10.jpg" style="width:100%">
+   					<img class="mySlides" src="Images\gl11.jpg" style="width:100%">
+   					<img class="mySlides" src="Images\gl12.jpg" style="width:100%">
+   					<img class="mySlides" src="Images\gl13.jpg" style="width:100%">
+   					<img class="mySlides" src="Images\gl14.jpg" style="width:100%">
+   					<img class="mySlides" src="Images\gl15.jpg" style="width:100%">
+   					<div class="w3-row w3-black w3-center">
+    				<div class="w3-display-container">
+     				<p id="caption"></p>
+     				<span class="w3-display-left w3-btn" onclick="plusDivs(-1)">❮</span>
+     				<span class="w3-display-right w3-btn" onclick="plusDivs(1)">❯</span>
+    				</div>
+    				<div class="w3-col s4">
+     					<img class="demo w3-opacity w3-hover-opacity-off" src="Images\gl1.jpg" style="width:100%;height:300px;" onclick="currentDiv(1)" alt="1">
+    				</div>
+    				<div class="w3-col s4">
+    					<img class="demo w3-opacity w3-hover-opacity-off" src="Images\gl2.jpg" style="width:100%;height: 300px;" onclick="currentDiv(2)" alt="2">
+    				</div>
+    				<div class="w3-col s4">
+     					<img class="demo w3-opacity w3-hover-opacity-off" src="Images\gl3.jpg" style="width:100%;height: 300px;" onclick="currentDiv(3)" alt="3">
+    				</div>
+    				<div class="w3-col s4">
+     					<img class="demo w3-opacity w3-hover-opacity-off" src="Images\gl4.jpg" style="width:100%;height: 300px;" onclick="currentDiv(1)" alt="4">
+    				</div>
+    				<div class="w3-col s4">
+    					<img class="demo w3-opacity w3-hover-opacity-off" src="Images\gl5.jpg" style="width:100%;height: 300px;" onclick="currentDiv(2)" alt="5">
+    				</div>
+    				<div class="w3-col s4">
+     					<img class="demo w3-opacity w3-hover-opacity-off" src="Images\gl6.jpg" style="width:100%;height: 300px;" onclick="currentDiv(3)" alt="6">
+    				</div>
+    				<div class="w3-col s4">
+     					<img class="demo w3-opacity w3-hover-opacity-off" src="Images\gl7.jpg" style="width:100%;height:300px;" onclick="currentDiv(1)" alt="7">
+    				</div>
+    				<div class="w3-col s4">
+    					<img class="demo w3-opacity w3-hover-opacity-off" src="Images\gl8.jpg" style="width:100%;height: 300px;" onclick="currentDiv(2)" alt="8">
+    				</div>
+    				<div class="w3-col s4">
+     					<img class="demo w3-opacity w3-hover-opacity-off" src="Images\gl9.jpg" style="width:100%;height: 300px;" onclick="currentDiv(3)" alt="9">
+    				</div>
+    				<div class="w3-col s4">
+     					<img class="demo w3-opacity w3-hover-opacity-off" src="Images\gl10.jpg" style="width:100%;height: 300px;" onclick="currentDiv(1)" alt="10">
+    				</div>
+    				<div class="w3-col s4">
+    					<img class="demo w3-opacity w3-hover-opacity-off" src="Images\gl11.jpg" style="width:100%;height: 300px;" onclick="currentDiv(2)" alt="11">
+    				</div>
+    				<div class="w3-col s4">
+     					<img class="demo w3-opacity w3-hover-opacity-off" src="Images\gl12.jpg" style="width:100%;height: 300px;" onclick="currentDiv(3)" alt="12">
+    				</div>
+    				<div class="w3-col s4">
+     					<img class="demo w3-opacity w3-hover-opacity-off" src="Images\gl13.jpg" style="width:100%;height: 300px;" onclick="currentDiv(1)" alt="13">
+    				</div>
+    				<div class="w3-col s4">
+    					<img class="demo w3-opacity w3-hover-opacity-off" src="Images\gl14.jpg" style="width:100%;height: 300px;" onclick="currentDiv(2)" alt="14">
+    				</div>
+    				<div class="w3-col s4">
+     					<img class="demo w3-opacity w3-hover-opacity-off" src="Images\gl15.jpg" style="width:100%;height: 300px;" onclick="currentDiv(3)" alt="15">
+    				</div>
+   				</div> <!-- End row -->
+  			</div> <!-- End w3-content -->
+  
+ 		</div> <!-- End modal content -->
+	</div> <!-- End modal -->
+
+</div>
+ <!-- Footer -->
+    <div class="container-fluid" style="background-color: #c50e29;">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3><span class="glyphicon glyphicon-earphone">&nbsp;9512400157</h3>
+        </div>
+        <div class="col-sm-4">
+          <h3><span class="glyphicon glyphicon-envelope">&nbsp;happyperiods1510@gmail.com</h3>
+        </div>
+        <div class="col-sm-4">
+          <center><a href="http://www.facebook.com/happyredstain" class="fa fa-facebook" id="foot"></a></center>
+        </div>
+      </div>
+    </div>
+
+	<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+	</body>
+</html>

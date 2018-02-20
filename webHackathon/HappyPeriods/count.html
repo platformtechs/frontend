@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta name="auther" content="Akanksha Sharma">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" media="mediatype and|not|only (media feature)" href="mystylesheet.css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<center><img src="Images\girls.jpg" alt="girl" width="250px" height="250px"></center>
+					<div id="countd">
+					<center><span class="count">756</span></center>
+					</div>
+					<div class="title">
+					<center><h2>Girls</h2></center>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<center><img src="Images\school.png" alt="school" width="250px" height="250px"></center>
+					<div id="countd">
+					<center><span class="count">12</span></center>
+					</div>
+					<div class="title">
+					<center><h2>Villages</h2></center>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<center><img src="Images\village.png" alt="villge" width="250px" height="250px"></center>
+					<div id="countd">
+					<center><span class="count">2</span></center>
+					</div>
+					<div class="title">
+					<center><h2>Schools</h2></center>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<center><img src="Images\district.png" alt="district" width="250px" height="250px"></center>
+					<div id="countd">
+					<center><span class="count">3</span></center>
+					</div>
+					<div class="title">
+					<center><h2>Districts</h2></center>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			$('.count').each(function () {
+   			$(this).prop('Counter',0).animate({
+        	Counter: $(this).text()
+    		}, {
+        	duration: 4000,
+        	easing: 'swing',
+        	step: function (now) {
+            $(this).text(Math.ceil(now));
+        	}
+    		});
+		});
+		</script>
+
+	</body>
+</html>

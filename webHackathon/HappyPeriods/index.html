@@ -1,0 +1,607 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta name="auther" content="Akanksha Sharma">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" media="mediatype and|not|only (media feature)" href="mystylesheet.css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<link href="https://fonts.googleapis.com/css?family=Signika:700" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Cabin:700" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Lobster|lora" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Coda+Caption:800" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	    <style>
+	    	/*css for navbar*/
+	    	#navctn{
+	    		font-family: 'Raleway';
+	    		font-size: 14pt;
+	    		color:#ffffff !important;
+	    	}
+	    	/*CSS for dropdown button*/
+			.dropbtn{
+				background: #c50e29;
+				color:white;
+				/*border:0px 15px 0px 15px black;*/
+				border:none;
+				padding:8px;
+				cursor:pointer;
+				padding-top: 15px;
+			}
+			.dropdown{
+				position:relative;
+				display:inline-block;
+			}
+			.dropdown-content{
+				display:none;
+				position: absolute;
+				background-color: #c50e29;
+				min-width:160px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				z-index:1;
+			}
+			.dropdown-content a{
+				color:white;
+				padding:12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+			.dropdown-content a:hover{
+				/*background-color: #c8c8c8;*/
+				margin-left: 20px;
+			}
+			.dropdown:hover .dropdown-content{
+				display: block;
+			}
+			.dropdown:hover .dropbtn{
+				background-color: #ff867f;
+			}
+
+			/*css for head */
+			#head{
+				margin-top: 50px;
+				background-color: #fd0001;
+				padding-bottom: 50px;
+			}
+			#logo{
+				padding-top: 50px;
+			}
+			#headheading{
+				font-family: 'Signika';
+				font-size: 60pt;
+				padding-top: 40px;
+				text-shadow: 2px 2px #ffffff;
+			}
+			h2{
+				font-family: 'Vollkorn';
+				font-size: 32pt;
+				padding-top: 20px;
+				text-shadow: 1px 1px #ffffff;
+			}
+
+      #section1{margin-top:50px;}
+			/*css for about section*/
+			#heading{
+	    		color: #fd0001;
+	    		font-family: 'Cabin';
+	    		font-size: 40pt;
+	    	}
+	    	p{
+	    		font-family: 'Libre Franklin','sans-serif';
+	    		font-size: 16pt;
+	    		padding-top: 20px;
+	    		padding-left: 20px;
+	    	}
+	    	.readbtn1{
+    			font-family: 'lora';
+    			font-size: 20pt;
+    			border-radius: 10px 10px 10px 10px;
+          box-shadow: 1px 1px #00867d;
+    			width:150px;
+    			height:50px;
+    			background-color: #82e9de;
+    			margin-left: 20px;
+    			margin-top: 80px;
+    		}
+    		.head{
+    			font-family: 'Signika';
+    			font-size: 42pt;
+    		}
+    	.image{
+            opacity:1;
+            display:block;
+            width:100%;
+            height:350px;
+            transition: .5s;
+            backface-visibility: hidden;
+            margin-bottom: 30px;
+        }
+
+        .middle{
+            transition: .5s ease;
+            opacity: 0;
+            position:absolute;
+            top:25%;
+            left:50%;
+            margin-top: 50px;
+            transform: translate(-50%, -50%);
+            -ms-transform:translate(-50%, -50%);
+        }
+
+        .col-sm-3:hover .image{
+            opacity:0.3;
+        }
+
+        .col-sm-3:hover .middle{
+            opacity:1;
+        }
+        .col-sm-2:hover .image{
+            opacity:0.3;
+        }
+
+        .col-sm-2:hover .middle{
+            opacity:1;
+        }
+
+        /*.text{
+            background-color: transparent;
+            color:brown;
+            font-size: 20px;
+        }*/
+        .title{
+            font-size: 18pt;
+        }
+        .desc{
+            font-size:12pt; 
+        }
+
+        #section2{
+        	padding-top: 50px;
+        	/*padding-bottom: 50px;*/
+          /*background-color: #71c2fb;*/
+        }
+
+        /*css for section5*/
+        #section5{
+        	width:100%;
+        	height:400px;
+        	background-color: #fd0001;
+          background-image: url('Images/gl46.jpg');
+          background-repeat: no-repeat;
+        }
+        #joinbtn{
+        	margin-top: 0px;
+        	margin-bottom: 200px;
+        	font-family: 'Roboto Slab';
+    		font-size: 42pt;
+    		color:black;
+    		border-radius: 10px 10px 10px 10px;
+    		width:300px;
+   			height:80px;
+   			background-color: #ff9999;
+        }
+
+        .count{
+          font-style: 'TimesNewRoman';
+          font-size: 16pt;
+        }
+        #section6{
+          /*background-image: url('Images/images.jpg');
+          background-repeat: no-repeat;*/
+        }
+        
+       #section7{
+          background-color: #9cfa59;
+          background-image: url('Images/whiteBG.jpg');
+        }
+        #section4{
+          background-color: #f9f95d;
+          background-image: url('Images/whiteBG.jpg');
+        }
+        .vhead{
+          margin-top:150px;
+          font-size: 'Raleway';
+          font-size: 36pt;
+          color: white;
+        }
+        #foot{
+          font-size: 20pt;
+          padding-top: 15px;
+          /*padding-left: 10px;
+          padding-right: 20px;
+          padding-bottom: 30px;*/
+        }
+	    </style>
+
+	</head>
+	<body>
+		<!-- Div for Navbar -->
+		<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #c50e29;">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+        			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          				<span class="icon-bar"></span>
+          				<span class="icon-bar"></span>
+          				<span class="icon-bar"></span>                        
+      				</button>
+				    <img src="Images\logo1.jpg" alt="logo" style="height:50px;">
+    			</div>
+    		<div>
+        	<div class="collapse navbar-collapse" id="myNavbar">
+        		<ul class="nav navbar-nav">
+        		    <li id="navctn"><a href="index.html">Home</a></li>
+        			<li id="navctn"><a href="abouthp.html">About Us</a></li>
+        	  		<li id="navctn">
+        	  			<div class="dropdown">
+								<button class="dropbtn">Our Work</button>
+								<div class="dropdown-content">
+								
+									<a href="gallery.html">Gallery</a>
+									<a href="achievements.html">Achievments</a>
+								
+								</div>
+							</div>
+        	  		</li>
+            		<li id="navctn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSd0vABcFQ9GNSByT_sWLdChVL_4m-mw4CiJJ2G43msZHfIbRQ/viewform?usp=sf_link">Join Us</a></li>
+            		<!--<li><a href="#section5">Contact Us</a></li>-->
+        		</ul>
+        	</div>
+    	</div>
+   		</div>
+   		</nav> 
+
+   		<!-- Div for head  -->
+   		<div class="container-fluid" id="head">
+   			<center>
+   				<img src="Images\headlogo.jpg" alt="logo" id="logo">
+   				<h1 id="headheading">Happy Periods</h1>
+   				<h2>"Creating Period Ready Schools and Villages"</h2>
+   			</center> 
+   		</div>
+
+   		<!-- Div for slideshow -->
+		 <div id="section1" class="container-fluid">
+   		 <div id="myCarousel" class="carousel slide" data-ride="carousel">
+		    <!-- Indicators -->
+    		<ol class="carousel-indicators">
+      			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      			<li data-target="#myCarousel" data-slide-to="1"></li>
+      			<li data-target="#myCarousel" data-slide-to="2"></li>
+      			<li data-target="#myCarousel" data-slide-to="3"></li>
+      			<li data-target="#myCarousel" data-slide-to="4"></li>
+    		</ol>
+
+    		<!-- Wrapper for slides -->
+    		<div class="carousel-inner">
+      			<div class="item active">
+       				 <img src="Images\slideshow1.jpg" alt="img1" style="width:100%; height:600px; margin: none; size: cover;">
+      			</div>
+
+      			<div class="item">
+       				 <img src="Images\slideshow2.jpg" alt="img2" style="width:100%; height:600px;">
+      			</div>
+    
+   			   <div class="item">
+        			<img src="Images\slideshow3.jpg" alt="img3" style="width:100%; height:600px;">
+      			</div>
+      			<div class="item">
+        			<img src="Images\slideshow4.jpg" alt="img3" style="width:100%; height:600px;">
+      			</div>
+      			<div class="item">
+        			<img src="Images\slideshow5.jpg" alt="img3" style="width:100%; height:600px;">
+      			</div>
+    		</div>
+
+			<!-- Left and right controls -->
+    		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      			<span class="glyphicon glyphicon-chevron-left"></span>
+      			<span class="sr-only">Previous</span>
+    		</a>
+    		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+      			<span class="glyphicon glyphicon-chevron-right"></span>
+      			<span class="sr-only">Next</span>
+    		</a>
+   		 </div>
+   </div>
+
+   <!-- Div for home about us section -->
+		<div class="container-fluid" id="section2">
+			<center><h1 id="heading">About Happy Periods</h1><hr width="30%"></center>
+			<div class="row">
+				<div class="col-sm-6">
+					<p style="padding-top: 50px;">Happy Periods is an initiative to create Period Ready Schools and villages in India. </p>
+					<p>We conduct sessions on mensturation in schools and communities with girls  of age 12-15, their mothers,teachers and Asha workers....</p>
+					<button type="button" class="readbtn1"><a href="abouthp.html">Read More</a></button>
+				</div>
+				<div class="col-sm-1"></div>
+				<div class="col-sm-5">
+					<img src="Images\about.png" alt="hp" width="500px" style="padding-top: 50px;padding-left: 50px;padding-right: 50px;">
+				</div>
+			</div>
+		</div>
+
+    <!--Div for gallery-->
+    <div class="conatiner" id="section7">
+      <div class="row">
+        <center>
+        <h1 id="heading">Gallery<hr width="10%"></h1>
+        </center>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <!-- Div for slideshow -->
+            <div id="section1" class="container-fluid">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators >
+              <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                  <li data-target="#myCarousel" data-slide-to="4"></li>
+              </ol -->
+
+            <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                  <div class="item active">
+                     <img src="Images\gl42.jpg" alt="img1" style="width:100%; margin: none; size: cover;height: 250px;">
+                  </div>
+
+                  <div class="item">
+                     <img src="Images\gl48.jpg" alt="img2" style="width:100%;height:250px;">
+                  </div>
+    
+                  <div class="item">
+                    <img src="Images\gl18.jpg" alt="img3" style="width:100%;height:250px;">
+                  </div>
+                  <div class="item">
+                    <img src="Images\gl24.jpg" alt="img3" style="width:100%;height:250px;">
+                  </div>
+                  <div class="item">
+                    <img src="Images\gl26.jpg" alt="img3" style="width:100%;height:250px;">
+                  </div>
+              </div>
+        </div>
+        </div>
+        </div>
+        <div class="col-sm-3 ">
+          <!-- Div for slideshow -->
+             <div id="section1" class="container-fluid">
+               <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators >
+              <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                  <li data-target="#myCarousel" data-slide-to="4"></li>
+              </ol -->
+
+            <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                  <div class="item active">
+                     <img src="Images\gl48.jpg" alt="img1" style="width:100%; margin: none; size: cover;height:250px;">
+                  </div>
+
+                  <div class="item">
+                     <img src="Images\gl18.jpg" alt="img2" style="width:100%;height:250px;">
+                  </div>
+    
+                  <div class="item">
+                    <img src="Images\gl24.jpg" alt="img3" style="width:100%;height:250px;">
+                  </div>
+                  <div class="item">
+                    <img src="Images\gl26.jpg" alt="img3" style="width:100%;height:250px;">
+                  </div>
+                  <div class="item">
+                    <img src="Images\gl42.jpg" alt="img3" style="width:100%;height:250px;">
+                  </div>
+              </div>
+        </div>
+        </div>
+        </div>
+        <div class="col-sm-3">
+          <!-- Div for slideshow -->
+            <div id="section1" class="container-fluid">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators >
+              <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                  <li data-target="#myCarousel" data-slide-to="4"></li>
+              </ol-->
+
+            <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="Images\gl18.jpg" alt="img1" style="width:100%; margin: none; size: cover;height: 250px;">
+                  </div>
+
+                  <div class="item">
+                     <img src="Images\gl24.jpg" alt="img2" style="width:100%;height: 250px;">
+                  </div>
+      
+                 <div class="item">
+                    <img src="Images\gl26.jpg" alt="img3" style="width:100%;height: 250px;">
+                  </div>
+                  <div class="item">
+                    <img src="Images\gl42.jpg" alt="img3" style="width:100%;height: 250px;">
+                  </div>
+                  <div class="item">
+                    <img src="Images\gl48.jpg" alt="img3" style="width:100%;height: 250px;">
+                  </div>
+              </div>
+        </div>
+        </div>
+        </div>
+        <div class="col-sm-3 ">
+          <!-- Div for slideshow -->
+            <div id="section1" class="container-fluid">
+               <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators >
+              <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                  <li data-target="#myCarousel" data-slide-to="4"></li>
+              </ol -->
+
+            <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                  <div class="item active">
+                     <img src="Images\gl24.jpg" alt="img1" style="width:100%; margin: none; size: cover;height: 250px;">
+                  </div>
+
+                  <div class="item">
+                     <img src="Images\gl26.jpg" alt="img2" style="width:100%;height: 250px;">
+                  </div>
+    
+                  <div class="item">
+                    <img src="Images\gl42.jpg" alt="img3" style="width:100%;height: 250px;">
+                  </div>
+                  <div class="item">
+                    <img src="Images\gl48.jpg" alt="img3" style="width:100%;height: 250px;">
+                  </div>
+                  <div class="item">
+                    <img src="Images\gl18.jpg" alt="img3" style="width:100%;height: 250px;">
+                  </div>
+              </div>
+              </div>
+              </div>
+        </div>
+      </div>
+      <center><button type="button" class="readbtn1" style="margin-bottom: 40px;"><a href="gallery.html">View More</a></button></center>
+      </div>
+
+      <!--Div for Our Work-->
+      <div class="container-fluid" id="section6">
+      <center><h1 id="heading" style="padding-bottom: 30px;padding-top: 30px;"><strong>Our Work</strong></h1></center>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <center><img src="Images\girls.jpg" alt="girl" width="150px" height="150px"></center>
+          <div id="countd">
+          <center><span class="count">756</span></center>
+          </div>
+          <div class="title">
+          <center><h2>Girls</h2></center>
+          </div>
+              </div>
+              <div class="col-sm-6">
+                <center><img src="Images\school.png" alt="school" width="150px" height="150px"></center>
+          <div id="countd">
+          <center><span class="count">12</span></center>
+          </div>
+          <div class="title">
+          <center><h2>Villages</h2></center>
+          </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <center><img src="Images\village.png" alt="villge" width="150px" height="150px"></center>
+          <div id="countd">
+          <center><span class="count">2</span></center>
+          </div>
+          <div class="title">
+          <center><h2>Schools</h2></center>
+          </div>
+              </div>
+              <div class="col-sm-6">
+                <center><img src="Images\district.png" alt="district" width="150px" height="150px"></center>
+          <div id="countd">
+          <center><span class="count">3</span></center>
+          </div>
+          <div class="title">
+          <center><h2>Districts</h2></center>
+          </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <center><img src="Images\india.png" alt="map" width="700px" ></center>
+          </div>
+        </div>
+      </div>
+
+		 <!-- Div for Our Team -->
+        <div id="section4" class="container-fluid">
+        <center><h1 id="heading" style="padding-bottom: 70px;"><strong>Our Team</strong><hr width="20%"></h1></center>
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="Images\shuma.jpg" alt="shuma" class="image" width="100%" height="100%">
+                <div class="middle">
+                    <div class="text">
+                        <h2 class="title">Shuma Banik</h2>
+                        <p class="desc">Engineer by degree, Painter by pasion and now a Gandhi fellow(2016-2018) working in rural Gujarat</p>
+                        <p class="desc">Native : Assam</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <img src="Images\suhasini.jpg" alt="suhasini" class="image">
+                <div class="middle">
+                    <div class="text">
+                        <h2 class="title">Suhasini Pasbola</h2>
+                        <p class="desc">MA Economics, Dancer by passion and now a Gandhi fellow(2016-2018) working in rural Gujarat</p>
+                        <p class="desc">Native : Uttarakhand</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 ">
+                <img src="Images\deepankar.jpg" alt="deepankar" class="image">
+                <div class="middle">
+                    <div class="text">
+                        <h2 class="title">Deepankar Mukherjee</h2>
+                        <p class="desc">MBA from Management Develpoment Institute, Gurgaon, a Theatre Artist and now working at Tata Communications Innovations Group.</p>
+                        <p class="desc">Native : Chandigarh</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 ">
+                <img src="Images\vinay.jpg" alt="vinay" class="image">
+                <div class="middle">
+                    <div class="text">
+                        <h2 class="title">Vinay Kumar</h2>
+                        <p class="desc">Post Graduate from Indian Institude of Mass Communication, Theatre artist and now a Gandhi fellow working in Thane, Maharashtra</p>
+                        <p class="desc">Native : Uttar Pradesh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+
+   	<!-- Div for join us -->
+   	<div class="container-fluid" id="section5">
+   		<center>
+      <h1 class="vhead">Volunteer</h1>
+      <button type="button" id="joinbtn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSd0vABcFQ9GNSByT_sWLdChVL_4m-mw4CiJJ2G43msZHfIbRQ/viewform?usp=sf_link">Join Us</a></button></center>
+   	</div>
+
+    <!-- Footer -->
+    <div class="container-fluid" style="background-color: #c50e29;">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3><span class="glyphicon glyphicon-earphone">&nbsp;9512400157</h3>
+        </div>
+        <div class="col-sm-4">
+          <h3><span class="glyphicon glyphicon-envelope">&nbsp;happyperiods1510@gmail.com</h3>
+        </div>
+        <div class="col-sm-4">
+          <center><a href="http://www.facebook.com/happyredstain" class="fa fa-facebook" class="fa fa-facebook" id="foot"></a></center>
+        </div>
+      </div>
+    </div>
+	</body>
+</html>

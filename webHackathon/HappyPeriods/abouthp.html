@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta name="auther" content="Akanksha Sharma">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" media="mediatype and|not|only (media feature)" href="mystylesheet.css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<link href="https://fonts.googleapis.com/css?family=Signika:700" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Cabin:700" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Lobster|lora" rel="stylesheet">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    	<style>
+    		/*CSS for dropdown button*/
+			.dropbtn{
+				background: #c50e29;;
+				color:white;
+				/*border:0px 15px 0px 15px black;*/
+				border:none;
+				padding:8px;
+				cursor:pointer;
+				padding-top: 15px;
+			}
+			.dropdown{
+				position:relative;
+				display:inline-block;
+			}
+			.dropdown-content{
+				display:none;
+				position: absolute;
+				background-color:#c50e29; 
+				min-width:160px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				z-index:1;
+			}
+			.dropdown-content a{
+				color:white;
+				padding:12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+			.dropdown-content a:hover{
+				/*background-color: #c8c8c8;*/
+				margin-left: 20px;
+			}
+			.dropdown:hover .dropdown-content{
+				display: block;
+			}
+			.dropdown:hover .dropbtn{
+				background-color:#ff867f;
+			}
+
+			/*css for abouthp */
+    		#heading{
+	    		color: #fd0001;
+	    		font-family: 'Cabin';
+	    		font-size: 40pt;
+	    		margin-top: 50px;
+	    	}
+	    	p{
+	    		font-family: 'Libre Franklin','sans-serif';
+	    		font-size: 14pt;
+	    	}
+	    	#foot{
+         		 font-size: 20pt;
+         		 padding-top: 10px;
+         		 /*padding-left: 10px;
+         		 padding-right: 20px;
+         		 padding-bottom: 30px;*/
+        	}
+    	</style>
+	</head>
+	<body>
+		<!-- Div for Navbar -->
+		<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #c50e29;">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+        			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          				<span class="icon-bar"></span>
+          				<span class="icon-bar"></span>
+          				<span class="icon-bar"></span>                        
+      				</button>
+				    <img src="Images\logo1.jpg" alt="logo" style="height:50px;">
+    			</div>
+    		<div>
+        	<div class="collapse navbar-collapse" id="myNavbar">
+        		<ul class="nav navbar-nav">
+        		    <li><a href="index.html">Home</a></li>
+        			<li><a href="abouthp.html">About Us</a></li>
+        	  		<li>
+        	  			<div class="dropdown">
+								<button class="dropbtn">Our Work</button>
+								<div class="dropdown-content">
+								
+									<a href="gallery.html">Gallery</a>
+									<a href="achievements.html">Achievments</a>
+								
+								</div>
+							</div>
+        	  		</li>
+            		<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd0vABcFQ9GNSByT_sWLdChVL_4m-mw4CiJJ2G43msZHfIbRQ/viewform?usp=sf_link">Join Us</a></li>
+            		<!--<li><a href="#section5">Contact Us</a></li>-->
+        		</ul>
+        	</div>
+    	</div>
+   		</div>
+   		</nav> 
+
+		<center><h1 id="heading">About Happy Periods</h1></center>
+		<!--marquee>
+			
+			<img src="Images\g1.jpg">
+			<img src="Images\g2.jpg">
+			<img src="Images\g3.jpg">
+			<img src="Images\g4.jpg">
+			<img src="Images\g5.jpg">
+			<img src="Images\g6.jpg">
+			<img src="Images\g7.jpg">
+			<img src="Images\g8.jpg">
+			<img src="Images\g9.jpg">
+			<img src="Images\g10.jpg">
+			<img src="Images\g11.jpg">
+			<img src="Images\g12.jpg">
+			<img src="Images\g13.jpg">
+			<img src="Images\g14.jpg">
+			<img src="Images\g15.jpg">
+			<img src="Images\g16.jpg">
+			<img src="Images\g17.jpg">
+			<img src="Images\g18.jpg">
+			<img src="Images\g19.jpg">
+			<img src="Images\g20.jpg">
+			<img src="Images\g21.jpg">
+			<img src="Images\g22.jpg">
+			<img src="Images\g23.jpg">
+			<img src="Images\g24.jpg">
+			<img src="Images\g25.jpg">
+			<img src="Images\g26.jpg">
+			<img src="Images\g27.jpg">
+			<img src="Images\g28.jpg">
+			<img src="Images\g29.jpg">
+			<img src="Images\g30.jpg">
+		</marquee>
+
+		<!-- Div for what do we do?-->
+		<center>
+		<h2>What do we do?</h2>
+		<hr style="width: 15%;">
+		<p>Happy periods is an initiative to create period ready schools and villages in India.</p>
+		<p>We conduct sessions on menstruation in schools and communities with girls of age 12-15, their mothers, teachers and Asha workers(Local health worker of the village).</p>
+		<p>Video learning material 'Hello Periods' from Menstrupedia.org, few body positive art activities and charts of female reproductive systems are used in the session.</p>
+		<p>Moving forward towards creation of period ready schools and villages, pink dustbin for disposal of sanitary waste are also to be set up in schools and communities and a booklet of five activites which has to be done by the girls themselves after talking to their mothers and peers to ensure that they are period ready.</p>
+		<h2>Work done so far</h2>
+		<hr width="15%">
+		<p>We have reached out to 756 girls in 12 different villages in 4 blocks of Surat district in Gujarat and 2 schools in Mumbra, Thane, Maharashtra</p>
+		</center>
+		 <!-- Footer -->
+    <div class="container-fluid" style="background-color: #c50e29;">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3><span class="glyphicon glyphicon-earphone">&nbsp;9512400157</h3>
+        </div>
+        <div class="col-sm-4">
+          <h3><span class="glyphicon glyphicon-envelope">&nbsp;happyperiods1510@gmail.com</h3>
+        </div>
+        <div class="col-sm-4">
+          <center><a href="http://www.facebook.com/happyredstain" class="fa fa-facebook" class="fa fa-facebook" id="foot"></a></center>
+        </div>
+      </div>
+    </div>
+	</body>
+</html>

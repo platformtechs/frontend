@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta name="auther" content="Akanksha Sharma">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" media="mediatype and|not|only (media feature)" href="mystylesheet.css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<link href="https://fonts.googleapis.com/css?family=Signika:700" rel="stylesheet">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link href="https://fonts.googleapis.com/css?family=Cabin:700" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    	<style>
+    		/*CSS for dropdown button*/
+			.dropbtn{
+				background: #c50e29;
+				color:white;
+				/*border:0px 15px 0px 15px black;*/
+				border:none;
+				padding:8px;
+				cursor:pointer;
+				padding-top: 15px;
+			}
+			.dropdown{
+				position:relative;
+				display:inline-block;
+			}
+			.dropdown-content{
+				display:none;
+				position: absolute;
+				background-color: #c50e29;
+				min-width:160px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				z-index:1;
+			}
+			.dropdown-content a{
+				color:white;
+				padding:12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+			.dropdown-content a:hover{
+				/*background-color: #c8c8c8;*/
+				margin-left: 20px;
+			}
+			.dropdown:hover .dropdown-content{
+				display: block;
+			}
+			.dropdown:hover .dropbtn{
+				background-color: #ff867f;
+			}
+
+			#heading{
+	    		color: #fd0001;
+	    		font-family: 'Cabin';
+	    		font-size: 40pt;
+	    		margin-top: 50px;
+	    	}
+	    	#foot{
+             font-size: 20pt;
+             padding-top: 10px;
+            /* padding-left: 10px;
+             padding-right: 20px;
+             padding-bottom: 30px;*/
+          	}
+          	#ach{
+          		width: 100%;
+          		height: 600px;
+          	}
+    	</style>
+	</head>
+	<body>
+		<!-- Div for Navbar -->
+		<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #c50e29;">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+        			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          				<span class="icon-bar"></span>
+          				<span class="icon-bar"></span>
+          				<span class="icon-bar"></span>                        
+      				</button>
+				    <img src="Images\logo1.jpg" alt="logo" style="height:50px;">
+    			</div>
+    		<div>
+        	<div class="collapse navbar-collapse" id="myNavbar">
+        		<ul class="nav navbar-nav">
+        		    <li><a href="index.html">Home</a></li>
+        			<li><a href="abouthp.html">About Us</a></li>
+        	  		<li>
+        	  			<div class="dropdown">
+								<button class="dropbtn">Our Work</button>
+								<div class="dropdown-content">
+								
+									<a href="gallery.html">Gallery</a>
+									<a href="achievements.html">Achievments</a>
+								
+								</div>
+							</div>
+        	  		</li>
+            		<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd0vABcFQ9GNSByT_sWLdChVL_4m-mw4CiJJ2G43msZHfIbRQ/viewform?usp=sf_link">Join Us</a></li>
+            		<!--<li><a href="#section5">Contact Us</a></li>-->
+        		</ul>
+        	</div>
+    	</div>
+   		</div>
+   		</nav> 
+
+   		<!-- Achivments -->
+   		<div class="container-fluid" id="ach">
+   		<center><h1 id="heading">Achievements</h1>
+   		<hr width="20%">
+   		<img src="Images\umeed.png">
+   		<img src="Images\logo1.jpg"></center>
+   		</div> 
+
+   		 <!-- Footer -->
+   		 <div class="container-fluid" style="background-color: #c50e29;">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3><span class="glyphicon glyphicon-earphone">&nbsp;9512400157</h3>
+        </div>
+        <div class="col-sm-4">
+          <h3><span class="glyphicon glyphicon-envelope">&nbsp;happyperiods1510@gmail.com</h3>
+        </div>
+        <div class="col-sm-4">
+          <center><a href="http://www.facebook.com/happyredstain" class="fa fa-facebook" id="foot"></a></center>
+        </div>
+      </div>
+    </div>
+	</body>
+</html>

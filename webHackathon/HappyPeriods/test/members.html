@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta name="auther" content="Akanksha Sharma">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" media="mediatype and|not|only (media feature)" href="mystylesheet.css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<link href="https://fonts.googleapis.com/css?family=Signika:700" rel="stylesheet">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    	<style>
+    	.head{
+    			font-family: 'Signika';
+    			font-size: 42pt;
+    		}
+    	.image{
+            opacity:1;
+            display:block;
+            width:100%;
+            height:300px;
+            transition: .5s;
+            backface-visibility: hidden;
+            margin-bottom: 30px;
+        }
+
+        .middle{
+            transition: .5s ease;
+            opacity: 0;
+            position:absolute;
+            top:25%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            -ms-transform:translate(-50%, -50%);
+        }
+
+        .col-sm-3:hover .image{
+            opacity:0.3;
+        }
+
+        .col-sm-3:hover .middle{
+            opacity:1;
+        }
+        .col-sm-2:hover .image{
+            opacity:0.3;
+        }
+
+        .col-sm-2:hover .middle{
+            opacity:1;
+        }
+
+        .text{
+            background-color: transparent;
+            color:brown;
+            font-size: 20px;
+        }
+    	</style>
+	</head>
+	<body>
+		
+        <!-- Div for Our Team -->
+        <div id="section4" class="container-fluid">
+        <center><h1 class="head"><strong>Our Team</strong></h1></center>
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="Images\shuma.jpg" alt="shuma" class="image" width="100%" height="100%">
+                <div class="middle">
+                    <div class="text">
+                        <h2>Shuma Banik</h2>
+                        <p>Engineeri by degree, Painter by pasion and now a Gandhi fellow(2016-2018) working in rural Gujarat</p>
+                        <p>Native : Assam</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <img src="Images\suhasini.jpg" alt="chef2" class="image">
+                <div class="middle">
+                    <div class="text">
+                        <h2>Suhasini Pasbola</h2>
+                        <p>MA Economics, Dancer by passion and now a Gandhi fellow(2016-2018) working in rural Gujarat</p>
+                        <p>Native : Uttarakhand</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 ">
+                <img src="Images\deepankar.jpg" alt="chef3" class="image">
+                <div class="middle">
+                    <div class="text">
+                        <h2>Deepankar Mukherjee</h2>
+                        <p>MBA from Management Develpoment Institute, Gurgaon, a Theatre Artist and now working at Tata Communications Innovations Group.</p>
+                        <p>Native : Chandigarh</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 ">
+                <img src="Images\vinay.jpg" alt="chef3" class="image">
+                <div class="middle">
+                    <div class="text">
+                        <h2>Vinay Kumar</h2>
+                        <p>Post Graduate from Indian Institude of Mass Communication, Theatre artist and now a Gandhi fellow working in Thane, Maharashtra</p>
+                        <p>Native : Uttar Pradesh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+   
+	</body>
+</html>
